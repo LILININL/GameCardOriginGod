@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="demon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a1b24" />
+      <stop offset="100%" stop-color="#8d2f23" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#demon)" />
+  <circle cx="130" cy="90" r="92" fill="#ff9f5f33" />
+  <path d="M20 330C170 270 240 390 350 320C470 250 560 390 780 300" stroke="#f5a46f" stroke-width="20" fill="none" stroke-linecap="round" />
+  <text x="52" y="78" font-size="52" font-family="Verdana" fill="#ffd2a8">DEMON UNIT</text>
+</svg>

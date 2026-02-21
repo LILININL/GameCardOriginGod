@@ -1,0 +1,316 @@
+{
+  "sectionId": "DECK_DEMON_SKILL_SIDE_01",
+  "title": "Deck / DEMON / SKILL_SIDE (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "DEMON",
+  "cardType": "SKILL_SIDE",
+  "cards": [
+    {
+      "id": "D_SS_DEMON_CONTRACT",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_SIDE",
+      "name": {
+        "th": "พันธะปีศาจ",
+        "en": "Demon Contract"
+      },
+      "description": {
+        "th": "ใช้ Side Stack 3 ทำดาเมจหนัก 4 แต่เจ็บราชาตัวเอง 1",
+        "en": "Spend 3 Side Stacks to deal 4, then self-damage king by 1."
+      },
+      "faction": "DEMON",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 20,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 3
+      },
+      "requirements": {
+        "requiresFaction": "DEMON",
+        "minSideStacks": 3
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 4,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ALLY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "side"
+      ]
+    },
+    {
+      "id": "D_SS_DEMON_BLOOD_TITHE",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_SIDE",
+      "name": {
+        "th": "บรรณาการโลหิต",
+        "en": "Blood Tithe"
+      },
+      "description": {
+        "th": "ใช้ Side Stack 4 ทำลายยูนิตศัตรู 1 และเจ็บราชาตัวเอง 2",
+        "en": "Spend 4 side stacks to destroy an enemy unit and take 2 self king damage."
+      },
+      "faction": "DEMON",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 63,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 4
+      },
+      "requirements": {
+        "requiresFaction": "DEMON",
+        "minSideStacks": 4
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DESTROY",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ALLY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "side",
+        "demon"
+      ]
+    },
+    {
+      "id": "D_SS_HELLFIRE_RITUAL",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_SIDE",
+      "name": {
+        "th": "พิธีเพลิงนรก",
+        "en": "Hellfire Ritual"
+      },
+      "description": {
+        "th": "ใช้ Side Stack 3 ยิงหมู่ศัตรู 1 และฟื้นมานา 1",
+        "en": "Spend 3 side stacks to deal 1 AoE and restore 1 mana."
+      },
+      "faction": "DEMON",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 64,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 3
+      },
+      "requirements": {
+        "requiresFaction": "DEMON",
+        "minSideStacks": 3
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "RESTORE_MANA",
+          "target": {
+            "owner": "SELF",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "side",
+        "demon"
+      ]
+    },
+    {
+      "id": "D2_SS_002",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_SIDE",
+      "name": {
+        "th": "สัญญาโลหิตจู่โจม",
+        "en": "Blood Pact Assault"
+      },
+      "description": {
+        "th": "ต้องใช้แต้มฝั่งอย่างน้อย 3",
+        "en": "Requires at least 3 side stacks."
+      },
+      "faction": "DEMON",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 121,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 3
+      },
+      "requirements": {
+        "requiresFaction": "DEMON",
+        "minSideStacks": 3
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 4,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ALLY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "side",
+        "expanded"
+      ]
+    },
+    {
+      "id": "D2_SS_004",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_SIDE",
+      "name": {
+        "th": "พิธีบูชายัญเถ้า",
+        "en": "Ashen Sacrifice"
+      },
+      "description": {
+        "th": "ต้องใช้แต้มฝั่งอย่างน้อย 4",
+        "en": "Requires at least 4 side stacks."
+      },
+      "faction": "DEMON",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 123,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 4
+      },
+      "requirements": {
+        "requiresFaction": "DEMON",
+        "minSideStacks": 4
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DESTROY",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ALLY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "side",
+        "expanded"
+      ]
+    }
+  ]
+}

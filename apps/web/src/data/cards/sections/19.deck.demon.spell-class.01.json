@@ -1,0 +1,64 @@
+{
+  "sectionId": "DECK_DEMON_SPELL_CLASS_01",
+  "title": "Deck / DEMON / SPELL_CLASS (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "DEMON",
+  "cardType": "SPELL_CLASS",
+  "cards": [
+    {
+      "id": "D2_SC_005",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_CLASS",
+      "name": {
+        "th": "ล้วงจุดตาย",
+        "en": "Vital Breach"
+      },
+      "description": {
+        "th": "ต้องมี ASSASSIN ในสนามเพื่อใช้งาน",
+        "en": "Requires ASSASSIN on board."
+      },
+      "faction": "DEMON",
+      "race": "NONE",
+      "classTags": [
+        "ASSASSIN"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 113,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresClassOnBoard": [
+          "ASSASSIN"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DESTROY",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "condition": {
+            "type": "TARGET_IS_DAMAGED"
+          },
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "class",
+        "expanded"
+      ]
+    }
+  ]
+}

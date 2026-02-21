@@ -1,0 +1,188 @@
+{
+  "sectionId": "DECK_NEUTRAL_SPELL_GENERIC_02",
+  "title": "Deck / NEUTRAL / SPELL_GENERIC (Part 2)",
+  "kind": "DECK_CARD",
+  "faction": "NEUTRAL",
+  "cardType": "SPELL_GENERIC",
+  "cards": [
+    {
+      "id": "D2_S_004",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "ปราการเหล็ก",
+        "en": "Iron Bastion"
+      },
+      "description": {
+        "th": "บัฟพลังชีวิตยูนิตแถวหน้า +1 แบบถาวร",
+        "en": "Give allied frontline +1 health permanently."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 102,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "BUFF_HP",
+          "target": {
+            "owner": "ALLY",
+            "zone": "BOARD_FRONT",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "expanded"
+      ]
+    },
+    {
+      "id": "D2_S_005",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "แผนที่ซ่อนเร้น",
+        "en": "Hidden Route"
+      },
+      "description": {
+        "th": "จั่วการ์ด 2 ใบ",
+        "en": "Draw 2 cards."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 103,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "expanded"
+      ]
+    },
+    {
+      "id": "D2_S_007",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "ลมหายใจมานา",
+        "en": "Mana Breath"
+      },
+      "description": {
+        "th": "ฟื้นฟูมานา 2",
+        "en": "Restore 2 mana."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 105,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "RESTORE_MANA",
+          "target": {
+            "owner": "SELF",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "expanded"
+      ]
+    },
+    {
+      "id": "D2_S_010",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "คลื่นปิดเสียง",
+        "en": "Mute Wave"
+      },
+      "description": {
+        "th": "ทำให้ยูนิตศัตรูที่เลือกติด Silence",
+        "en": "Silence a chosen enemy unit."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 108,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "SILENCE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "expanded"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "sectionId": "KING_NEUTRAL_01",
+  "title": "KING / NEUTRAL (Part 1)",
+  "kind": "KING",
+  "faction": "NEUTRAL",
+  "cardType": null,
+  "cards": [
+    {
+      "id": "K_HUMAN_AUREN",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "KING",
+      "name": {
+        "th": "ราชาออเรน",
+        "en": "King Auren"
+      },
+      "description": {
+        "th": "ราชามนุษย์ HP น้อยกว่า แต่คอมโบการเล่นการ์ดได้ยืดหยุ่น",
+        "en": "Human king trades HP for flexible combo play."
+      },
+      "faction": "NEUTRAL",
+      "race": "HUMAN",
+      "classTags": [],
+      "rarity": "LEGENDARY",
+      "collectible": true,
+      "releaseOrder": 3,
+      "allowedFactionsInDeck": [
+        "HEAVEN",
+        "DEMON",
+        "NEUTRAL"
+      ],
+      "forbiddenCardTypes": [
+        "SKILL_RACE"
+      ],
+      "hp": 18,
+      "ultimate": {
+        "name": {
+          "th": "ยุทธศาสตร์สามชั้น",
+          "en": "Triad Tactics"
+        },
+        "usesPerGame": 1,
+        "unlockTurnMin": 6,
+        "effects": [
+          {
+            "id": "A01",
+            "trigger": "ON_ULTIMATE",
+            "op": "GAIN_COMBO",
+            "target": {
+              "owner": "SELF",
+              "zone": "KING",
+              "selector": "NONE"
+            },
+            "amount": 2,
+            "duration": "INSTANT"
+          },
+          {
+            "id": "A02",
+            "trigger": "ON_ULTIMATE",
+            "op": "DRAW_CARD",
+            "target": {
+              "owner": "SELF",
+              "zone": "DECK",
+              "selector": "NONE"
+            },
+            "drawCount": 1,
+            "duration": "INSTANT"
+          },
+          {
+            "id": "A03",
+            "trigger": "ON_ULTIMATE",
+            "op": "REDUCE_NEXT_TYPE_COST",
+            "target": {
+              "owner": "SELF",
+              "zone": "HAND",
+              "selector": "NONE"
+            },
+            "amount": 1,
+            "appliesToCardTypes": [
+              "SPELL_GENERIC",
+              "SPELL_CLASS",
+              "SKILL_RACE",
+              "SKILL_SIDE"
+            ],
+            "duration": "END_OF_TURN"
+          }
+        ]
+      },
+      "tags": [
+        "alpha",
+        "king",
+        "human",
+        "combo"
+      ]
+    }
+  ]
+}

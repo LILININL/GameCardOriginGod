@@ -1,0 +1,309 @@
+{
+  "sectionId": "DECK_NEUTRAL_UNIT_01",
+  "title": "Deck / NEUTRAL / UNIT (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "NEUTRAL",
+  "cardType": "UNIT",
+  "cards": [
+    {
+      "id": "D_U_MERCENARY_CLERIC",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "นักบวชรับจ้าง",
+        "en": "Mercenary Cleric"
+      },
+      "description": {
+        "th": "ฟื้นเลือดราชาฝั่งเราเมื่อถูกลงสนาม",
+        "en": "Heals your king when played."
+      },
+      "faction": "NEUTRAL",
+      "race": "HUMAN",
+      "classTags": [
+        "PRIEST",
+        "SUPPORT"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 11,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "attack": 1,
+      "hp": 3,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "neutral"
+      ]
+    },
+    {
+      "id": "D_U_STEEL_PIKEMAN",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "พลหอกเหล็กกล้า",
+        "en": "Steel Pikeman"
+      },
+      "description": {
+        "th": "ยูนิตกลางมาตรฐาน ใช้เติมคอลัมน์ได้ทุกเด็ค",
+        "en": "Solid neutral frontline filler for any deck."
+      },
+      "faction": "NEUTRAL",
+      "race": "MACHINE",
+      "classTags": [
+        "WARRIOR"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 41,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 3,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "neutral"
+      ]
+    },
+    {
+      "id": "D_U_WANDERING_BARD",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "กวีพเนจร",
+        "en": "Wandering Bard"
+      },
+      "description": {
+        "th": "ตัวซัพพอร์ตกลาง ลงแล้วจั่วเพิ่ม 1 ใบ",
+        "en": "Neutral support unit that draws 1 card on play."
+      },
+      "faction": "NEUTRAL",
+      "race": "HUMAN",
+      "classTags": [
+        "SUPPORT",
+        "PRIEST"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 42,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "attack": 1,
+      "hp": 3,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "neutral",
+        "draw"
+      ]
+    },
+    {
+      "id": "D_U_TWINBLADE_ASSASSIN",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "นักฆ่าดาบคู่",
+        "en": "Twinblade Assassin"
+      },
+      "description": {
+        "th": "ลงแล้วบุกได้เลย เหมาะจบยูนิตที่เลือดน้อย",
+        "en": "Rush attacker that can immediately pressure weak targets."
+      },
+      "faction": "NEUTRAL",
+      "race": "HUMAN",
+      "classTags": [
+        "ASSASSIN"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 43,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 3,
+      "hp": 2,
+      "rangeType": "MELEE",
+      "deployment": "ANY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "RUSH",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "neutral",
+        "assassin"
+      ]
+    },
+    {
+      "id": "D_U_CLOCKWORK_MEDIC",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "เมดิกจักรกล",
+        "en": "Clockwork Medic"
+      },
+      "description": {
+        "th": "เครื่องจักรรักษา ฟื้นฟูยูนิตฝั่งเราที่เจ็บที่สุด 2",
+        "en": "Machine healer that restores 2 HP to your most injured ally."
+      },
+      "faction": "NEUTRAL",
+      "race": "MACHINE",
+      "classTags": [
+        "SUPPORT",
+        "PRIEST"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 44,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 1,
+      "hp": 4,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "LOWEST_HP"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "neutral",
+        "heal"
+      ]
+    },
+    {
+      "id": "D2_U_003",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 3",
+        "en": "Tactical Unit 3"
+      },
+      "description": {
+        "th": "ยูนิตสาย mage ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A mage unit for tempo and board control."
+      },
+      "faction": "NEUTRAL",
+      "race": "BEASTKIN",
+      "classTags": [
+        "MAGE"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 67,
+      "cost": {
+        "mana": 5,
+        "sideStacks": 0
+      },
+      "attack": 4,
+      "hp": 6,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "SNIPER",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "neutral"
+      ]
+    }
+  ]
+}

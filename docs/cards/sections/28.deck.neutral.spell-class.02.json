@@ -1,0 +1,204 @@
+{
+  "sectionId": "DECK_NEUTRAL_SPELL_CLASS_02",
+  "title": "Deck / NEUTRAL / SPELL_CLASS (Part 2)",
+  "kind": "DECK_CARD",
+  "faction": "NEUTRAL",
+  "cardType": "SPELL_CLASS",
+  "cards": [
+    {
+      "id": "D_SC_ENGINE_PROTOCOL",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_CLASS",
+      "name": {
+        "th": "โปรโตคอลวิศวะอาร์เคน",
+        "en": "Arcane Engine Protocol"
+      },
+      "description": {
+        "th": "ต้องมี Mage ในสนาม ลดค่าการ์ด non-unit ถัดไป 2 และจั่ว 1",
+        "en": "Requires a Mage. Reduce next non-unit cost by 2 and draw 1."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [
+        "MAGE"
+      ],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 55,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresClassOnBoard": [
+          "MAGE"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "REDUCE_NEXT_TYPE_COST",
+          "target": {
+            "owner": "SELF",
+            "zone": "HAND",
+            "selector": "NONE"
+          },
+          "amount": 2,
+          "appliesToCardTypes": [
+            "SPELL_GENERIC",
+            "SPELL_CLASS",
+            "SKILL_RACE",
+            "SKILL_SIDE"
+          ],
+          "duration": "END_OF_TURN"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "class",
+        "mage"
+      ]
+    },
+    {
+      "id": "D2_SC_003",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_CLASS",
+      "name": {
+        "th": "รูนเร่งวงจร",
+        "en": "Rune Acceleration"
+      },
+      "description": {
+        "th": "ต้องมี MAGE ในสนามเพื่อใช้งาน",
+        "en": "Requires MAGE on board."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [
+        "MAGE"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 111,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresClassOnBoard": [
+          "MAGE"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "REDUCE_NEXT_TYPE_COST",
+          "target": {
+            "owner": "SELF",
+            "zone": "HAND",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "appliesToCardTypes": [
+            "SPELL_GENERIC",
+            "SPELL_CLASS",
+            "SKILL_RACE",
+            "SKILL_SIDE"
+          ],
+          "duration": "END_OF_TURN"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "class",
+        "expanded"
+      ]
+    },
+    {
+      "id": "D2_SC_006",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_CLASS",
+      "name": {
+        "th": "ยืนระยะป้อมเหล็ก",
+        "en": "Steel Stand"
+      },
+      "description": {
+        "th": "ต้องมี TANK ในสนามเพื่อใช้งาน",
+        "en": "Requires TANK on board."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [
+        "TANK"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 114,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresClassOnBoard": [
+          "TANK"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "BUFF_HP",
+          "target": {
+            "owner": "ALLY",
+            "zone": "BOARD_FRONT",
+            "selector": "ALL"
+          },
+          "amount": 2,
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "class",
+        "expanded"
+      ]
+    }
+  ]
+}

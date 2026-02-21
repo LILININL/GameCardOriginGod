@@ -1,0 +1,326 @@
+{
+  "sectionId": "DECK_NEUTRAL_UNIT_02",
+  "title": "Deck / NEUTRAL / UNIT (Part 2)",
+  "kind": "DECK_CARD",
+  "faction": "NEUTRAL",
+  "cardType": "UNIT",
+  "cards": [
+    {
+      "id": "D2_U_006",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 6",
+        "en": "Tactical Unit 6"
+      },
+      "description": {
+        "th": "ยูนิตสาย tank ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A tank unit for tempo and board control."
+      },
+      "faction": "NEUTRAL",
+      "race": "MACHINE",
+      "classTags": [
+        "TANK"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 70,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 3,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 1,
+          "condition": {
+            "type": "ALLY_CLASS_COUNT_AT_LEAST",
+            "classTag": "TANK",
+            "value": 1
+          },
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "neutral"
+      ]
+    },
+    {
+      "id": "D2_U_009",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 9",
+        "en": "Tactical Unit 9"
+      },
+      "description": {
+        "th": "ยูนิตสาย archer ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A archer unit for tempo and board control."
+      },
+      "faction": "NEUTRAL",
+      "race": "HUMAN",
+      "classTags": [
+        "ARCHER"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 73,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 0
+      },
+      "attack": 1,
+      "hp": 2,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "BUFF_HP",
+          "target": {
+            "owner": "ALLY",
+            "zone": "BOARD_FRONT",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "neutral"
+      ]
+    },
+    {
+      "id": "D2_U_012",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 12",
+        "en": "Tactical Unit 12"
+      },
+      "description": {
+        "th": "ยูนิตสาย assassin ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A assassin unit for tempo and board control."
+      },
+      "faction": "NEUTRAL",
+      "race": "DRAGONKIN",
+      "classTags": [
+        "ASSASSIN"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 76,
+      "cost": {
+        "mana": 4,
+        "sideStacks": 0
+      },
+      "attack": 3,
+      "hp": 4,
+      "rangeType": "MELEE",
+      "deployment": "ANY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "TAUNT",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "neutral"
+      ]
+    },
+    {
+      "id": "D2_U_015",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 15",
+        "en": "Tactical Unit 15"
+      },
+      "description": {
+        "th": "ยูนิตสาย warrior ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A warrior unit for tempo and board control."
+      },
+      "faction": "NEUTRAL",
+      "race": "BEASTKIN",
+      "classTags": [
+        "WARRIOR"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 79,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "attack": 1,
+      "hp": 3,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "neutral"
+      ]
+    },
+    {
+      "id": "D2_U_018",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 18",
+        "en": "Tactical Unit 18"
+      },
+      "description": {
+        "th": "ยูนิตสาย priest ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A priest unit for tempo and board control."
+      },
+      "faction": "NEUTRAL",
+      "race": "MACHINE",
+      "classTags": [
+        "PRIEST"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 82,
+      "cost": {
+        "mana": 5,
+        "sideStacks": 0
+      },
+      "attack": 4,
+      "hp": 5,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "BUFF_ATK",
+          "target": {
+            "owner": "ALLY",
+            "zone": "BOARD_FRONT",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "END_OF_TURN"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "neutral"
+      ]
+    },
+    {
+      "id": "D2_U_021",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 21",
+        "en": "Tactical Unit 21"
+      },
+      "description": {
+        "th": "ยูนิตสาย support ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A support unit for tempo and board control."
+      },
+      "faction": "NEUTRAL",
+      "race": "HUMAN",
+      "classTags": [
+        "SUPPORT"
+      ],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 85,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 4,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "RUSH",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "neutral"
+      ]
+    }
+  ]
+}

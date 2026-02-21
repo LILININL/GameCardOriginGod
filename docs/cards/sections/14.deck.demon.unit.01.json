@@ -1,0 +1,341 @@
+{
+  "sectionId": "DECK_DEMON_UNIT_01",
+  "title": "Deck / DEMON / UNIT (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "DEMON",
+  "cardType": "UNIT",
+  "cards": [
+    {
+      "id": "D_U_BLOOD_RAIDER",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "โจรเลือดเดือด",
+        "en": "Blood Raider"
+      },
+      "description": {
+        "th": "ลงสนามแล้วตีได้ทันที และสะสม Stack เมื่อสังหารสำเร็จ",
+        "en": "Has Rush and generates Side Stack on kill."
+      },
+      "faction": "DEMON",
+      "race": "DEMON",
+      "classTags": [
+        "ASSASSIN"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 12,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "attack": 3,
+      "hp": 1,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "RUSH",
+          "duration": "PERMANENT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_KILL",
+          "op": "GAIN_SIDE_STACK",
+          "target": {
+            "owner": "SELF",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "aggressive"
+      ]
+    },
+    {
+      "id": "D_U_GRAVE_GUARD",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "ผู้พิทักษ์สุสาน",
+        "en": "Grave Guard"
+      },
+      "description": {
+        "th": "แท็งก์อันเดดแนวหน้า สำหรับรับดาเมจแทนเพื่อน",
+        "en": "Undead frontliner with Taunt."
+      },
+      "faction": "DEMON",
+      "race": "UNDEAD",
+      "classTags": [
+        "TANK"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 13,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 4,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "TAUNT",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "tank"
+      ]
+    },
+    {
+      "id": "D_U_ABYSS_SNIPER",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "มือสังหารอบิส",
+        "en": "Abyss Sniper"
+      },
+      "description": {
+        "th": "มี Sniper เล็งเป้าหมายแนวหลังได้แม้ศัตรูมีแนวหน้า",
+        "en": "Has Sniper to target backline despite enemy frontline."
+      },
+      "faction": "DEMON",
+      "race": "ABYSSAL",
+      "classTags": [
+        "ARCHER"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 14,
+      "cost": {
+        "mana": 4,
+        "sideStacks": 0
+      },
+      "attack": 3,
+      "hp": 3,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "SNIPER",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "ranged"
+      ]
+    },
+    {
+      "id": "D_U_FALLEN_WARLOCK",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "วอร์ล็อคต้องสาป",
+        "en": "Fallen Warlock"
+      },
+      "description": {
+        "th": "ลงสนามแล้วยิง 2 แต่สะท้อนดาเมจเข้าราชาฝั่งเรา 1",
+        "en": "Deals 2 on play, then damages your king by 1."
+      },
+      "faction": "DEMON",
+      "race": "ABYSSAL",
+      "classTags": [
+        "MAGE"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 15,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 2,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_PLAY",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ALLY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "risk-reward"
+      ]
+    },
+    {
+      "id": "D_U_HELLHOUND_SCOUT",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "สเกาต์เฮลฮาวด์",
+        "en": "Hellhound Scout"
+      },
+      "description": {
+        "th": "ตัวเปิดเกมของปีศาจ ลงแล้วพร้อมบุกทันที",
+        "en": "Demon opener that gains Rush on summon."
+      },
+      "faction": "DEMON",
+      "race": "BEASTKIN",
+      "classTags": [
+        "ASSASSIN"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 33,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 1,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "RUSH",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "demon",
+        "tempo"
+      ]
+    },
+    {
+      "id": "D_U_BONE_CHANNELER",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "ร่างทรงกระดูก",
+        "en": "Bone Channeler"
+      },
+      "description": {
+        "th": "จอมเวทซากศพ ลงสนามแล้วเพิ่ม Side Stack 1",
+        "en": "Undead mage that grants 1 side stack on play."
+      },
+      "faction": "DEMON",
+      "race": "UNDEAD",
+      "classTags": [
+        "MAGE"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 34,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 3,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "GAIN_SIDE_STACK",
+          "target": {
+            "owner": "SELF",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "undead",
+        "stack"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "sectionId": "DECK_DEMON_SPELL_GENERIC_01",
+  "title": "Deck / DEMON / SPELL_GENERIC (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "DEMON",
+  "cardType": "SPELL_GENERIC",
+  "cards": [
+    {
+      "id": "D_S_SHADOW_BARRIER",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "กำแพงเงามืด",
+        "en": "Shadow Barrier"
+      },
+      "description": {
+        "th": "มอบ Ward ให้ยูนิตฝั่งเราทั้งหมด",
+        "en": "Grant Ward to all allied units."
+      },
+      "faction": "DEMON",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 50,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "keyword": "WARD",
+          "duration": "END_OF_TURN"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "demon",
+        "defense"
+      ]
+    },
+    {
+      "id": "D2_S_006",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "ลงทัณฑ์เฉียบพลัน",
+        "en": "Sudden Punishment"
+      },
+      "description": {
+        "th": "ทำลายยูนิตศัตรูที่บาดเจ็บ",
+        "en": "Destroy a damaged enemy unit."
+      },
+      "faction": "DEMON",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 104,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DESTROY",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "condition": {
+            "type": "TARGET_IS_DAMAGED"
+          },
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "expanded"
+      ]
+    },
+    {
+      "id": "D2_S_008",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "ระเบิดวงแหวน",
+        "en": "Ring Burst"
+      },
+      "description": {
+        "th": "ทำดาเมจ 1 ใส่ยูนิตศัตรูทั้งหมด",
+        "en": "Deal 1 damage to all enemy units."
+      },
+      "faction": "DEMON",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 106,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "expanded"
+      ]
+    }
+  ]
+}

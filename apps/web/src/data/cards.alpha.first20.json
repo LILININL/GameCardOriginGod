@@ -1,0 +1,249 @@
+{
+  "set": "ALPHA_001",
+  "schemaRef": "./card.schema.json",
+  "generatedOn": "2026-02-21",
+  "totalCards": 124,
+  "sectionCount": 30,
+  "sections": [
+    {
+      "sectionId": "KING_HEAVEN_01",
+      "title": "KING / HEAVEN (Part 1)",
+      "file": "cards/sections/01.kings.heaven.01.json",
+      "cardCount": 2,
+      "firstCardId": "K_HEAVEN_SOLARIS",
+      "lastCardId": "K_HEAVEN_ASTRAEL"
+    },
+    {
+      "sectionId": "KING_DEMON_01",
+      "title": "KING / DEMON (Part 1)",
+      "file": "cards/sections/02.kings.demon.01.json",
+      "cardCount": 2,
+      "firstCardId": "K_DEMON_MALZEK",
+      "lastCardId": "K_DEMON_VULKRAX"
+    },
+    {
+      "sectionId": "KING_NEUTRAL_01",
+      "title": "KING / NEUTRAL (Part 1)",
+      "file": "cards/sections/03.kings.neutral.01.json",
+      "cardCount": 1,
+      "firstCardId": "K_HUMAN_AUREN",
+      "lastCardId": "K_HUMAN_AUREN"
+    },
+    {
+      "sectionId": "COMMANDER_HEAVEN_01",
+      "title": "COMMANDER / HEAVEN (Part 1)",
+      "file": "cards/sections/04.commanders.heaven.01.json",
+      "cardCount": 3,
+      "firstCardId": "C_HEAVEN_VALORIA",
+      "lastCardId": "C_HEAVEN_IGNIS"
+    },
+    {
+      "sectionId": "COMMANDER_DEMON_01",
+      "title": "COMMANDER / DEMON (Part 1)",
+      "file": "cards/sections/05.commanders.demon.01.json",
+      "cardCount": 3,
+      "firstCardId": "C_DEMON_GOREL",
+      "lastCardId": "C_DEMON_RAZUL"
+    },
+    {
+      "sectionId": "DECK_HEAVEN_UNIT_01",
+      "title": "Deck / HEAVEN / UNIT (Part 1)",
+      "file": "cards/sections/06.deck.heaven.unit.01.json",
+      "cardCount": 6,
+      "firstCardId": "D_U_SHIELD_RECRUIT",
+      "lastCardId": "D_U_DAWN_PEGASUS"
+    },
+    {
+      "sectionId": "DECK_HEAVEN_UNIT_02",
+      "title": "Deck / HEAVEN / UNIT (Part 2)",
+      "file": "cards/sections/07.deck.heaven.unit.02.json",
+      "cardCount": 6,
+      "firstCardId": "D_U_SERAPH_LANCER",
+      "lastCardId": "D2_U_001"
+    },
+    {
+      "sectionId": "DECK_HEAVEN_UNIT_03",
+      "title": "Deck / HEAVEN / UNIT (Part 3)",
+      "file": "cards/sections/08.deck.heaven.unit.03.json",
+      "cardCount": 6,
+      "firstCardId": "D2_U_004",
+      "lastCardId": "D2_U_019"
+    },
+    {
+      "sectionId": "DECK_HEAVEN_UNIT_04",
+      "title": "Deck / HEAVEN / UNIT (Part 4)",
+      "file": "cards/sections/09.deck.heaven.unit.04.json",
+      "cardCount": 5,
+      "firstCardId": "D2_U_022",
+      "lastCardId": "D2_U_034"
+    },
+    {
+      "sectionId": "DECK_HEAVEN_SPELL_GENERIC_01",
+      "title": "Deck / HEAVEN / SPELL_GENERIC (Part 1)",
+      "file": "cards/sections/10.deck.heaven.spell-generic.01.json",
+      "cardCount": 4,
+      "firstCardId": "D_S_BATTLE_MEDIC",
+      "lastCardId": "D2_S_009"
+    },
+    {
+      "sectionId": "DECK_HEAVEN_SPELL_CLASS_01",
+      "title": "Deck / HEAVEN / SPELL_CLASS (Part 1)",
+      "file": "cards/sections/11.deck.heaven.spell-class.01.json",
+      "cardCount": 3,
+      "firstCardId": "D2_SC_001",
+      "lastCardId": "D2_SC_004"
+    },
+    {
+      "sectionId": "DECK_HEAVEN_SKILL_RACE_01",
+      "title": "Deck / HEAVEN / SKILL_RACE (Part 1)",
+      "file": "cards/sections/12.deck.heaven.skill-race.01.json",
+      "cardCount": 5,
+      "firstCardId": "D_SR_ANGELIC_HYMN",
+      "lastCardId": "D2_SR_004"
+    },
+    {
+      "sectionId": "DECK_HEAVEN_SKILL_SIDE_01",
+      "title": "Deck / HEAVEN / SKILL_SIDE (Part 1)",
+      "file": "cards/sections/13.deck.heaven.skill-side.01.json",
+      "cardCount": 3,
+      "firstCardId": "D_SS_HEAVEN_TRIBUNAL",
+      "lastCardId": "D2_SS_005"
+    },
+    {
+      "sectionId": "DECK_DEMON_UNIT_01",
+      "title": "Deck / DEMON / UNIT (Part 1)",
+      "file": "cards/sections/14.deck.demon.unit.01.json",
+      "cardCount": 6,
+      "firstCardId": "D_U_BLOOD_RAIDER",
+      "lastCardId": "D_U_BONE_CHANNELER"
+    },
+    {
+      "sectionId": "DECK_DEMON_UNIT_02",
+      "title": "Deck / DEMON / UNIT (Part 2)",
+      "file": "cards/sections/15.deck.demon.unit.02.json",
+      "cardCount": 6,
+      "firstCardId": "D_U_ABYSS_REAVER",
+      "lastCardId": "D_U_DRAGONKIN_RAIDER"
+    },
+    {
+      "sectionId": "DECK_DEMON_UNIT_03",
+      "title": "Deck / DEMON / UNIT (Part 3)",
+      "file": "cards/sections/16.deck.demon.unit.03.json",
+      "cardCount": 6,
+      "firstCardId": "D2_U_002",
+      "lastCardId": "D2_U_017"
+    },
+    {
+      "sectionId": "DECK_DEMON_UNIT_04",
+      "title": "Deck / DEMON / UNIT (Part 4)",
+      "file": "cards/sections/17.deck.demon.unit.04.json",
+      "cardCount": 5,
+      "firstCardId": "D2_U_020",
+      "lastCardId": "D2_U_032"
+    },
+    {
+      "sectionId": "DECK_DEMON_SPELL_GENERIC_01",
+      "title": "Deck / DEMON / SPELL_GENERIC (Part 1)",
+      "file": "cards/sections/18.deck.demon.spell-generic.01.json",
+      "cardCount": 3,
+      "firstCardId": "D_S_SHADOW_BARRIER",
+      "lastCardId": "D2_S_008"
+    },
+    {
+      "sectionId": "DECK_DEMON_SPELL_CLASS_01",
+      "title": "Deck / DEMON / SPELL_CLASS (Part 1)",
+      "file": "cards/sections/19.deck.demon.spell-class.01.json",
+      "cardCount": 1,
+      "firstCardId": "D2_SC_005",
+      "lastCardId": "D2_SC_005"
+    },
+    {
+      "sectionId": "DECK_DEMON_SKILL_RACE_01",
+      "title": "Deck / DEMON / SKILL_RACE (Part 1)",
+      "file": "cards/sections/20.deck.demon.skill-race.01.json",
+      "cardCount": 4,
+      "firstCardId": "D_SR_UNDEAD_DIRGE",
+      "lastCardId": "D2_SR_005"
+    },
+    {
+      "sectionId": "DECK_DEMON_SKILL_SIDE_01",
+      "title": "Deck / DEMON / SKILL_SIDE (Part 1)",
+      "file": "cards/sections/21.deck.demon.skill-side.01.json",
+      "cardCount": 5,
+      "firstCardId": "D_SS_DEMON_CONTRACT",
+      "lastCardId": "D2_SS_004"
+    },
+    {
+      "sectionId": "DECK_NEUTRAL_UNIT_01",
+      "title": "Deck / NEUTRAL / UNIT (Part 1)",
+      "file": "cards/sections/22.deck.neutral.unit.01.json",
+      "cardCount": 6,
+      "firstCardId": "D_U_MERCENARY_CLERIC",
+      "lastCardId": "D2_U_003"
+    },
+    {
+      "sectionId": "DECK_NEUTRAL_UNIT_02",
+      "title": "Deck / NEUTRAL / UNIT (Part 2)",
+      "file": "cards/sections/23.deck.neutral.unit.02.json",
+      "cardCount": 6,
+      "firstCardId": "D2_U_006",
+      "lastCardId": "D2_U_021"
+    },
+    {
+      "sectionId": "DECK_NEUTRAL_UNIT_03",
+      "title": "Deck / NEUTRAL / UNIT (Part 3)",
+      "file": "cards/sections/24.deck.neutral.unit.03.json",
+      "cardCount": 4,
+      "firstCardId": "D2_U_024",
+      "lastCardId": "D2_U_033"
+    },
+    {
+      "sectionId": "DECK_NEUTRAL_SPELL_GENERIC_01",
+      "title": "Deck / NEUTRAL / SPELL_GENERIC (Part 1)",
+      "file": "cards/sections/25.deck.neutral.spell-generic.01.json",
+      "cardCount": 7,
+      "firstCardId": "D_S_BLAZE_BOLT",
+      "lastCardId": "D2_S_003"
+    },
+    {
+      "sectionId": "DECK_NEUTRAL_SPELL_GENERIC_02",
+      "title": "Deck / NEUTRAL / SPELL_GENERIC (Part 2)",
+      "file": "cards/sections/26.deck.neutral.spell-generic.02.json",
+      "cardCount": 4,
+      "firstCardId": "D2_S_004",
+      "lastCardId": "D2_S_010"
+    },
+    {
+      "sectionId": "DECK_NEUTRAL_SPELL_CLASS_01",
+      "title": "Deck / NEUTRAL / SPELL_CLASS (Part 1)",
+      "file": "cards/sections/27.deck.neutral.spell-class.01.json",
+      "cardCount": 5,
+      "firstCardId": "D_SC_ARCANE_OVERLOAD",
+      "lastCardId": "D_SC_FORTRESS_STANCE"
+    },
+    {
+      "sectionId": "DECK_NEUTRAL_SPELL_CLASS_02",
+      "title": "Deck / NEUTRAL / SPELL_CLASS (Part 2)",
+      "file": "cards/sections/28.deck.neutral.spell-class.02.json",
+      "cardCount": 3,
+      "firstCardId": "D_SC_ENGINE_PROTOCOL",
+      "lastCardId": "D2_SC_006"
+    },
+    {
+      "sectionId": "DECK_NEUTRAL_SKILL_RACE_01",
+      "title": "Deck / NEUTRAL / SKILL_RACE (Part 1)",
+      "file": "cards/sections/29.deck.neutral.skill-race.01.json",
+      "cardCount": 2,
+      "firstCardId": "D_SR_MACHINE_OVERCLOCK",
+      "lastCardId": "D2_SR_002"
+    },
+    {
+      "sectionId": "DECK_NEUTRAL_SKILL_SIDE_01",
+      "title": "Deck / NEUTRAL / SKILL_SIDE (Part 1)",
+      "file": "cards/sections/30.deck.neutral.skill-side.01.json",
+      "cardCount": 2,
+      "firstCardId": "D_SS_NEUTRAL_WAR_CHEST",
+      "lastCardId": "D2_SS_003"
+    }
+  ]
+}

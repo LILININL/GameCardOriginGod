@@ -1,0 +1,299 @@
+{
+  "sectionId": "DECK_HEAVEN_SKILL_RACE_01",
+  "title": "Deck / HEAVEN / SKILL_RACE (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "HEAVEN",
+  "cardType": "SKILL_RACE",
+  "cards": [
+    {
+      "id": "D_SR_ANGELIC_HYMN",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_RACE",
+      "name": {
+        "th": "บทสวดแห่งเทวา",
+        "en": "Angelic Hymn"
+      },
+      "description": {
+        "th": "ต้องมีเผ่า Angel ในสนาม ฟื้นฟูทั้งบอร์ดและให้ Ward ชั่วคราว",
+        "en": "Requires Angel on board. Team heal and temporary Ward."
+      },
+      "faction": "HEAVEN",
+      "race": "ANGEL",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 19,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresRaceOnBoard": [
+          "ANGEL"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "keyword": "WARD",
+          "duration": "END_OF_TURN"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "race"
+      ]
+    },
+    {
+      "id": "D_SR_DRAGONKIN_ASCENT",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_RACE",
+      "name": {
+        "th": "ผงาดเผ่ามังกร",
+        "en": "Dragonkin Ascent"
+      },
+      "description": {
+        "th": "ต้องมี Dragonkin ในสนาม บัฟโจมตีทั้งทีม +1 และฮีลราชา 2",
+        "en": "Requires Dragonkin. Buff all allied attack by 1 and heal king by 2."
+      },
+      "faction": "HEAVEN",
+      "race": "DRAGONKIN",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 56,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresRaceOnBoard": [
+          "DRAGONKIN"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "BUFF_ATK",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "PERMANENT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "race",
+        "dragonkin"
+      ]
+    },
+    {
+      "id": "D_SR_BEASTKIN_HUNT",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_RACE",
+      "name": {
+        "th": "ล่าฝูงอสูรปีก",
+        "en": "Beastkin Hunt"
+      },
+      "description": {
+        "th": "ต้องมี Beastkin ในสนาม มอบ Rush ให้ยูนิตฝั่งเราทั้งหมด",
+        "en": "Requires Beastkin. Grant Rush to all allied units."
+      },
+      "faction": "HEAVEN",
+      "race": "BEASTKIN",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 59,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresRaceOnBoard": [
+          "BEASTKIN"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "keyword": "RUSH",
+          "duration": "END_OF_TURN"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "race",
+        "beastkin"
+      ]
+    },
+    {
+      "id": "D2_SR_001",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_RACE",
+      "name": {
+        "th": "คํารามมังกรผนึกฟ้า",
+        "en": "Skybound Dragon Roar"
+      },
+      "description": {
+        "th": "ต้องมีเผ่า DRAGONKIN บนกระดาน",
+        "en": "Requires DRAGONKIN on board."
+      },
+      "faction": "HEAVEN",
+      "race": "DRAGONKIN",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 115,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresRaceOnBoard": [
+          "DRAGONKIN"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "BUFF_ATK",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "PERMANENT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "race",
+        "expanded"
+      ]
+    },
+    {
+      "id": "D2_SR_004",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_RACE",
+      "name": {
+        "th": "ล่ากระหน่ำฝูง",
+        "en": "Pack Rampage"
+      },
+      "description": {
+        "th": "ต้องมีเผ่า BEASTKIN บนกระดาน",
+        "en": "Requires BEASTKIN on board."
+      },
+      "faction": "HEAVEN",
+      "race": "BEASTKIN",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 118,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresRaceOnBoard": [
+          "BEASTKIN"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "keyword": "RUSH",
+          "duration": "END_OF_TURN"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "race",
+        "expanded"
+      ]
+    }
+  ]
+}

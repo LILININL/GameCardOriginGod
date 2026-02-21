@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="sks" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3dfce" />
+      <stop offset="100%" stop-color="#f4cda7" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sks)" />
+  <path d="M120 316L214 146L388 330L592 156L688 316" stroke="#7a3d2e" stroke-width="15" fill="none" />
+  <text x="126" y="90" font-size="56" font-family="Verdana" fill="#6a3528">SIDE SKILL</text>
+</svg>

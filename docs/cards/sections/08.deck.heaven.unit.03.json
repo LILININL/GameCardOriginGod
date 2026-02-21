@@ -1,0 +1,313 @@
+{
+  "sectionId": "DECK_HEAVEN_UNIT_03",
+  "title": "Deck / HEAVEN / UNIT (Part 3)",
+  "kind": "DECK_CARD",
+  "faction": "HEAVEN",
+  "cardType": "UNIT",
+  "cards": [
+    {
+      "id": "D2_U_004",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 4",
+        "en": "Tactical Unit 4"
+      },
+      "description": {
+        "th": "ยูนิตสาย priest ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A priest unit for tempo and board control."
+      },
+      "faction": "HEAVEN",
+      "race": "DRAGONKIN",
+      "classTags": [
+        "PRIEST"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 68,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 0
+      },
+      "attack": 1,
+      "hp": 1,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "LOWEST_HP"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "heaven"
+      ]
+    },
+    {
+      "id": "D2_U_007",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 7",
+        "en": "Tactical Unit 7"
+      },
+      "description": {
+        "th": "ยูนิตสาย support ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A support unit for tempo and board control."
+      },
+      "faction": "HEAVEN",
+      "race": "HUMAN",
+      "classTags": [
+        "SUPPORT"
+      ],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 71,
+      "cost": {
+        "mana": 4,
+        "sideStacks": 0
+      },
+      "attack": 4,
+      "hp": 5,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "GAIN_SIDE_STACK",
+          "target": {
+            "owner": "SELF",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "heaven"
+      ]
+    },
+    {
+      "id": "D2_U_010",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 10",
+        "en": "Tactical Unit 10"
+      },
+      "description": {
+        "th": "ยูนิตสาย mage ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A mage unit for tempo and board control."
+      },
+      "faction": "HEAVEN",
+      "race": "MACHINE",
+      "classTags": [
+        "MAGE"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 74,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 2,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "heaven"
+      ]
+    },
+    {
+      "id": "D2_U_013",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 13",
+        "en": "Tactical Unit 13"
+      },
+      "description": {
+        "th": "ยูนิตสาย tank ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A tank unit for tempo and board control."
+      },
+      "faction": "HEAVEN",
+      "race": "BEASTKIN",
+      "classTags": [
+        "TANK"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 77,
+      "cost": {
+        "mana": 5,
+        "sideStacks": 0
+      },
+      "attack": 5,
+      "hp": 6,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "SNIPER",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "heaven"
+      ]
+    },
+    {
+      "id": "D2_U_016",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 16",
+        "en": "Tactical Unit 16"
+      },
+      "description": {
+        "th": "ยูนิตสาย archer ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A archer unit for tempo and board control."
+      },
+      "faction": "HEAVEN",
+      "race": "ANGEL",
+      "classTags": [
+        "ARCHER"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 80,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 3,
+      "hp": 3,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 1,
+          "condition": {
+            "type": "ALLY_CLASS_COUNT_AT_LEAST",
+            "classTag": "ARCHER",
+            "value": 1
+          },
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "heaven"
+      ]
+    },
+    {
+      "id": "D2_U_019",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 19",
+        "en": "Tactical Unit 19"
+      },
+      "description": {
+        "th": "ยูนิตสาย assassin ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A assassin unit for tempo and board control."
+      },
+      "faction": "HEAVEN",
+      "race": "DRAGONKIN",
+      "classTags": [
+        "ASSASSIN"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 83,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 0
+      },
+      "attack": 1,
+      "hp": 2,
+      "rangeType": "MELEE",
+      "deployment": "ANY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "BUFF_HP",
+          "target": {
+            "owner": "ALLY",
+            "zone": "BOARD_FRONT",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "heaven"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "sectionId": "KING_HEAVEN_01",
+  "title": "KING / HEAVEN (Part 1)",
+  "kind": "KING",
+  "faction": "HEAVEN",
+  "cardType": null,
+  "cards": [
+    {
+      "id": "K_HEAVEN_SOLARIS",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "KING",
+      "name": {
+        "th": "ราชาโซลาริส",
+        "en": "King Solaris"
+      },
+      "description": {
+        "th": "ราชาฝั่งสวรรค์ เน้นฟื้นฟูและกันดาเมจช่วงพลิกเกม",
+        "en": "Heaven king focused on healing and late-turn protection."
+      },
+      "faction": "HEAVEN",
+      "race": "ANGEL",
+      "classTags": [],
+      "rarity": "LEGENDARY",
+      "collectible": true,
+      "releaseOrder": 1,
+      "allowedFactionsInDeck": [
+        "HEAVEN",
+        "NEUTRAL"
+      ],
+      "forbiddenCardTypes": [],
+      "hp": 20,
+      "ultimate": {
+        "name": {
+          "th": "แสงพิพากษา",
+          "en": "Solar Verdict"
+        },
+        "usesPerGame": 1,
+        "unlockTurnMin": 6,
+        "effects": [
+          {
+            "id": "A01",
+            "trigger": "ON_ULTIMATE",
+            "op": "HEAL",
+            "target": {
+              "owner": "ALLY",
+              "zone": "UNIT_ANY",
+              "selector": "ALL"
+            },
+            "amount": 2,
+            "duration": "INSTANT"
+          },
+          {
+            "id": "A02",
+            "trigger": "ON_ULTIMATE",
+            "op": "GRANT_KEYWORD",
+            "target": {
+              "owner": "ALLY",
+              "zone": "KING",
+              "selector": "NONE"
+            },
+            "keyword": "WARD",
+            "duration": "END_OF_TURN"
+          }
+        ]
+      },
+      "tags": [
+        "alpha",
+        "king",
+        "heaven"
+      ]
+    },
+    {
+      "id": "K_HEAVEN_ASTRAEL",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "KING",
+      "name": {
+        "th": "ราชาแอสตราเอล",
+        "en": "King Astrael"
+      },
+      "description": {
+        "th": "ราชามังกรแห่งสวรรค์ เน้นบัฟกองทัพและยืนระยะปลายเกม",
+        "en": "Heaven dragon king focused on team buffs and late-game scaling."
+      },
+      "faction": "HEAVEN",
+      "race": "DRAGONKIN",
+      "classTags": [],
+      "rarity": "LEGENDARY",
+      "collectible": true,
+      "releaseOrder": 21,
+      "allowedFactionsInDeck": [
+        "HEAVEN",
+        "NEUTRAL"
+      ],
+      "forbiddenCardTypes": [],
+      "hp": 20,
+      "ultimate": {
+        "name": {
+          "th": "ลมหายใจจักรพรรดิมังกร",
+          "en": "Imperial Dragon Breath"
+        },
+        "usesPerGame": 1,
+        "unlockTurnMin": 6,
+        "effects": [
+          {
+            "id": "A01",
+            "trigger": "ON_ULTIMATE",
+            "op": "BUFF_ATK",
+            "target": {
+              "owner": "ALLY",
+              "zone": "UNIT_ANY",
+              "selector": "ALL"
+            },
+            "amount": 1,
+            "duration": "PERMANENT"
+          },
+          {
+            "id": "A02",
+            "trigger": "ON_ULTIMATE",
+            "op": "HEAL",
+            "target": {
+              "owner": "ALLY",
+              "zone": "KING",
+              "selector": "NONE"
+            },
+            "amount": 3,
+            "duration": "INSTANT"
+          },
+          {
+            "id": "A03",
+            "trigger": "ON_ULTIMATE",
+            "op": "GRANT_KEYWORD",
+            "target": {
+              "owner": "ALLY",
+              "zone": "UNIT_ANY",
+              "selector": "ALL"
+            },
+            "keyword": "WARD",
+            "duration": "END_OF_TURN"
+          }
+        ]
+      },
+      "tags": [
+        "alpha",
+        "king",
+        "heaven",
+        "dragonkin"
+      ]
+    }
+  ]
+}

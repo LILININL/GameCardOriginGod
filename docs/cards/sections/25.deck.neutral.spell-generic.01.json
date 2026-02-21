@@ -1,0 +1,326 @@
+{
+  "sectionId": "DECK_NEUTRAL_SPELL_GENERIC_01",
+  "title": "Deck / NEUTRAL / SPELL_GENERIC (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "NEUTRAL",
+  "cardType": "SPELL_GENERIC",
+  "cards": [
+    {
+      "id": "D_S_BLAZE_BOLT",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "โบลต์เพลิง",
+        "en": "Blaze Bolt"
+      },
+      "description": {
+        "th": "เวททั่วไป สร้างความเสียหาย 2 ให้ยูนิตศัตรูที่เลือก",
+        "en": "Generic spell that deals 2 damage to a chosen enemy unit."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 16,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "removal"
+      ]
+    },
+    {
+      "id": "D_S_CHAIN_LIGHTNING",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "สายฟ้าลูกโซ่",
+        "en": "Chain Lightning"
+      },
+      "description": {
+        "th": "ทำความเสียหาย 1 แก่ยูนิตศัตรูทั้งหมด",
+        "en": "Deal 1 damage to all enemy units."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 45,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "aoe"
+      ]
+    },
+    {
+      "id": "D_S_REINFORCE_LINE",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "เสริมแนวรบ",
+        "en": "Reinforce Line"
+      },
+      "description": {
+        "th": "เพิ่มพลังชีวิต +1 ให้ยูนิตแถวหน้าฝั่งเรา",
+        "en": "Give +1 HP to all allied frontline units."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 46,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "BUFF_HP",
+          "target": {
+            "owner": "ALLY",
+            "zone": "BOARD_FRONT",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "buff"
+      ]
+    },
+    {
+      "id": "D_S_PINPOINT_STRIKE",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "จู่โจมจุดตาย",
+        "en": "Pinpoint Strike"
+      },
+      "description": {
+        "th": "ทำลายยูนิตศัตรูที่บาดเจ็บ 1 ตัว",
+        "en": "Destroy a chosen damaged enemy unit."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 47,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DESTROY",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "condition": {
+            "type": "TARGET_IS_DAMAGED"
+          },
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "destroy"
+      ]
+    },
+    {
+      "id": "D_S_MANA_SURGE",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "มานาเซิร์จ",
+        "en": "Mana Surge"
+      },
+      "description": {
+        "th": "ฟื้นฟูมานา 2 ให้เทิร์นนี้ต่อคอมโบได้ไกลขึ้น",
+        "en": "Restore 2 mana this turn for longer combo chains."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 48,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "RESTORE_MANA",
+          "target": {
+            "owner": "SELF",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "mana"
+      ]
+    },
+    {
+      "id": "D2_S_001",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "เพลิงบีบอัด",
+        "en": "Compressed Flame"
+      },
+      "description": {
+        "th": "เวทยิงเดี่ยว ทำดาเมจ 2 ใส่ยูนิตศัตรูที่เลือก",
+        "en": "Single-target spell that deals 2 to chosen enemy unit."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 99,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "expanded"
+      ]
+    },
+    {
+      "id": "D2_S_003",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "เสียงกลองบุก",
+        "en": "War Drum"
+      },
+      "description": {
+        "th": "บัฟโจมตีแถวหน้าฝั่งเรา +1 จนจบเทิร์น",
+        "en": "Give allied frontline +1 attack until end of turn."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 101,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "BUFF_ATK",
+          "target": {
+            "owner": "ALLY",
+            "zone": "BOARD_FRONT",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "END_OF_TURN"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "expanded"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "sectionId": "KING_DEMON_01",
+  "title": "KING / DEMON (Part 1)",
+  "kind": "KING",
+  "faction": "DEMON",
+  "cardType": null,
+  "cards": [
+    {
+      "id": "K_DEMON_MALZEK",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "KING",
+      "name": {
+        "th": "ราชามัลเซค",
+        "en": "King Malzek"
+      },
+      "description": {
+        "th": "ราชาฝั่งปีศาจ เน้นเคลียร์บอร์ดและบีบเลือดราชาคู่ต่อสู้",
+        "en": "Demon king focused on board wipe and direct pressure."
+      },
+      "faction": "DEMON",
+      "race": "DEMON",
+      "classTags": [],
+      "rarity": "LEGENDARY",
+      "collectible": true,
+      "releaseOrder": 2,
+      "allowedFactionsInDeck": [
+        "DEMON",
+        "NEUTRAL"
+      ],
+      "forbiddenCardTypes": [],
+      "hp": 20,
+      "ultimate": {
+        "name": {
+          "th": "ไฟนรกกวาดล้าง",
+          "en": "Infernal Sweep"
+        },
+        "usesPerGame": 1,
+        "unlockTurnMin": 6,
+        "effects": [
+          {
+            "id": "A01",
+            "trigger": "ON_ULTIMATE",
+            "op": "DEAL_DAMAGE",
+            "target": {
+              "owner": "ENEMY",
+              "zone": "UNIT_ANY",
+              "selector": "ALL"
+            },
+            "amount": 2,
+            "duration": "INSTANT"
+          },
+          {
+            "id": "A02",
+            "trigger": "ON_ULTIMATE",
+            "op": "DEAL_DAMAGE",
+            "target": {
+              "owner": "ENEMY",
+              "zone": "KING",
+              "selector": "NONE"
+            },
+            "amount": 2,
+            "duration": "INSTANT"
+          }
+        ]
+      },
+      "tags": [
+        "alpha",
+        "king",
+        "demon"
+      ]
+    },
+    {
+      "id": "K_DEMON_VULKRAX",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "KING",
+      "name": {
+        "th": "ราชาวูลแครกซ์",
+        "en": "King Vulkrax"
+      },
+      "description": {
+        "th": "ราชามังกรนรกสายบุก สร้างความเสียหายวงกว้างและปั้นแต้มฝั่งเร็ว",
+        "en": "Aggressive infernal dragon king with board-wide pressure and fast side stacks."
+      },
+      "faction": "DEMON",
+      "race": "DRAGONKIN",
+      "classTags": [],
+      "rarity": "LEGENDARY",
+      "collectible": true,
+      "releaseOrder": 22,
+      "allowedFactionsInDeck": [
+        "DEMON",
+        "NEUTRAL"
+      ],
+      "forbiddenCardTypes": [],
+      "hp": 20,
+      "ultimate": {
+        "name": {
+          "th": "เพลิงนรกกวาดล้าง",
+          "en": "Cataclysmic Hellfire"
+        },
+        "usesPerGame": 1,
+        "unlockTurnMin": 6,
+        "effects": [
+          {
+            "id": "A01",
+            "trigger": "ON_ULTIMATE",
+            "op": "DEAL_DAMAGE",
+            "target": {
+              "owner": "ENEMY",
+              "zone": "UNIT_ANY",
+              "selector": "ALL"
+            },
+            "amount": 2,
+            "duration": "INSTANT"
+          },
+          {
+            "id": "A02",
+            "trigger": "ON_ULTIMATE",
+            "op": "GAIN_SIDE_STACK",
+            "target": {
+              "owner": "SELF",
+              "zone": "KING",
+              "selector": "NONE"
+            },
+            "amount": 2,
+            "duration": "INSTANT"
+          },
+          {
+            "id": "A03",
+            "trigger": "ON_ULTIMATE",
+            "op": "RESTORE_MANA",
+            "target": {
+              "owner": "SELF",
+              "zone": "KING",
+              "selector": "NONE"
+            },
+            "amount": 1,
+            "duration": "INSTANT"
+          }
+        ]
+      },
+      "tags": [
+        "alpha",
+        "king",
+        "demon",
+        "dragonkin"
+      ]
+    }
+  ]
+}

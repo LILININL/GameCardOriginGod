@@ -1,0 +1,226 @@
+{
+  "sectionId": "COMMANDER_HEAVEN_01",
+  "title": "COMMANDER / HEAVEN (Part 1)",
+  "kind": "COMMANDER",
+  "faction": "HEAVEN",
+  "cardType": null,
+  "cards": [
+    {
+      "id": "C_HEAVEN_VALORIA",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "COMMANDER",
+      "name": {
+        "th": "แม่ทัพวาโลเรีย",
+        "en": "Commander Valoria"
+      },
+      "description": {
+        "th": "แนวหน้าสวรรค์ เสริมพลังแถวหน้าและประคองบอร์ด",
+        "en": "Heaven frontline commander for lane pressure and sustain."
+      },
+      "faction": "HEAVEN",
+      "race": "HUMAN",
+      "classTags": [
+        "WARRIOR",
+        "TANK"
+      ],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 4,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 4,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "aura": {
+        "burst": [
+          {
+            "id": "A01",
+            "trigger": "ON_ACTIVATE_AURA",
+            "op": "BUFF_ATK",
+            "target": {
+              "owner": "ALLY",
+              "zone": "BOARD_FRONT",
+              "selector": "ALL"
+            },
+            "amount": 2,
+            "duration": "END_OF_TURN"
+          }
+        ],
+        "pulse": [
+          {
+            "id": "A01",
+            "trigger": "ON_ACTIVATE_AURA",
+            "op": "HEAL",
+            "target": {
+              "owner": "ALLY",
+              "zone": "UNIT_ANY",
+              "selector": "LOWEST_HP"
+            },
+            "amount": 1,
+            "duration": "INSTANT"
+          }
+        ],
+        "pulseCooldownTurns": 2
+      },
+      "tags": [
+        "alpha",
+        "commander",
+        "heaven"
+      ]
+    },
+    {
+      "id": "C_HEAVEN_LYRA",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "COMMANDER",
+      "name": {
+        "th": "แม่ทัพไลรา",
+        "en": "Commander Lyra"
+      },
+      "description": {
+        "th": "แม่ทัพยิงไกล เร่งจังหวะเกมและปิดจุดอ่อนแนวหน้า",
+        "en": "Ranged commander that controls front lanes and enables tempo."
+      },
+      "faction": "HEAVEN",
+      "race": "ANGEL",
+      "classTags": [
+        "ARCHER",
+        "SUPPORT"
+      ],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 5,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 3,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "aura": {
+        "burst": [
+          {
+            "id": "A01",
+            "trigger": "ON_ACTIVATE_AURA",
+            "op": "DEAL_DAMAGE",
+            "target": {
+              "owner": "ENEMY",
+              "zone": "BOARD_FRONT",
+              "selector": "RANDOM",
+              "count": 2
+            },
+            "amount": 2,
+            "duration": "INSTANT"
+          }
+        ],
+        "pulse": [
+          {
+            "id": "A01",
+            "trigger": "ON_ACTIVATE_AURA",
+            "op": "BUFF_ATK",
+            "target": {
+              "owner": "ALLY",
+              "zone": "UNIT_ANY",
+              "selector": "CHOSEN"
+            },
+            "amount": 1,
+            "duration": "N_TURNS",
+            "turns": 2
+          }
+        ],
+        "pulseCooldownTurns": 2
+      },
+      "tags": [
+        "alpha",
+        "commander",
+        "heaven",
+        "ranged"
+      ]
+    },
+    {
+      "id": "C_HEAVEN_IGNIS",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "COMMANDER",
+      "name": {
+        "th": "แม่ทัพอิกนิส",
+        "en": "Commander Ignis"
+      },
+      "description": {
+        "th": "แม่ทัพมังกรสวรรค์ เสริมแนวหน้าให้แข็งและเทิร์นบุกชัดเจน",
+        "en": "Heaven dragon commander that fortifies frontlines and enables pressure turns."
+      },
+      "faction": "HEAVEN",
+      "race": "DRAGONKIN",
+      "classTags": [
+        "WARRIOR",
+        "MAGE"
+      ],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 23,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 3,
+      "hp": 4,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "aura": {
+        "burst": [
+          {
+            "id": "A01",
+            "trigger": "ON_ACTIVATE_AURA",
+            "op": "BUFF_ATK",
+            "target": {
+              "owner": "ALLY",
+              "zone": "BOARD_FRONT",
+              "selector": "ALL"
+            },
+            "amount": 1,
+            "duration": "END_OF_TURN"
+          },
+          {
+            "id": "A02",
+            "trigger": "ON_ACTIVATE_AURA",
+            "op": "GRANT_KEYWORD",
+            "target": {
+              "owner": "ALLY",
+              "zone": "BOARD_FRONT",
+              "selector": "ALL"
+            },
+            "keyword": "TAUNT",
+            "duration": "END_OF_TURN"
+          }
+        ],
+        "pulse": [
+          {
+            "id": "A01",
+            "trigger": "ON_ACTIVATE_AURA",
+            "op": "HEAL",
+            "target": {
+              "owner": "ALLY",
+              "zone": "UNIT_ANY",
+              "selector": "LOWEST_HP"
+            },
+            "amount": 1,
+            "duration": "INSTANT"
+          }
+        ],
+        "pulseCooldownTurns": 2
+      },
+      "tags": [
+        "alpha",
+        "commander",
+        "heaven",
+        "dragonkin"
+      ]
+    }
+  ]
+}

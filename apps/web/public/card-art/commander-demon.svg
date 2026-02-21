@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="cd" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#311f24" />
+      <stop offset="100%" stop-color="#7d3a2d" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#cd)" />
+  <path d="M88 332L234 178L360 300L540 156L712 332" stroke="#f3b788" stroke-width="16" fill="none" />
+  <text x="52" y="78" font-size="52" font-family="Verdana" fill="#ffd9bb">COMMANDER</text>
+</svg>

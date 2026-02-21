@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="heaven" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7f0fb" />
+      <stop offset="100%" stop-color="#f8e6b7" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#heaven)" />
+  <circle cx="640" cy="110" r="84" fill="#ffffff88" />
+  <path d="M80 360L250 170L390 280L520 120L740 360" stroke="#255f7a" stroke-width="18" fill="none" stroke-linecap="round" />
+  <text x="52" y="78" font-size="52" font-family="Verdana" fill="#23485a">HEAVEN UNIT</text>
+</svg>

@@ -1,0 +1,261 @@
+{
+  "sectionId": "DECK_DEMON_UNIT_04",
+  "title": "Deck / DEMON / UNIT (Part 4)",
+  "kind": "DECK_CARD",
+  "faction": "DEMON",
+  "cardType": "UNIT",
+  "cards": [
+    {
+      "id": "D2_U_020",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 20",
+        "en": "Tactical Unit 20"
+      },
+      "description": {
+        "th": "ยูนิตสาย tank ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A tank unit for tempo and board control."
+      },
+      "faction": "DEMON",
+      "race": "BEASTKIN",
+      "classTags": [
+        "TANK"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 84,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "attack": 3,
+      "hp": 2,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "demon"
+      ]
+    },
+    {
+      "id": "D2_U_023",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 23",
+        "en": "Tactical Unit 23"
+      },
+      "description": {
+        "th": "ยูนิตสาย archer ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A archer unit for tempo and board control."
+      },
+      "faction": "DEMON",
+      "race": "ABYSSAL",
+      "classTags": [
+        "ARCHER"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 87,
+      "cost": {
+        "mana": 5,
+        "sideStacks": 0
+      },
+      "attack": 6,
+      "hp": 6,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "SNIPER",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "demon"
+      ]
+    },
+    {
+      "id": "D2_U_026",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 26",
+        "en": "Tactical Unit 26"
+      },
+      "description": {
+        "th": "ยูนิตสาย assassin ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A assassin unit for tempo and board control."
+      },
+      "faction": "DEMON",
+      "race": "DEMON",
+      "classTags": [
+        "ASSASSIN"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 90,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 4,
+      "hp": 3,
+      "rangeType": "MELEE",
+      "deployment": "ANY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 1,
+          "condition": {
+            "type": "ALLY_CLASS_COUNT_AT_LEAST",
+            "classTag": "ASSASSIN",
+            "value": 1
+          },
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "demon"
+      ]
+    },
+    {
+      "id": "D2_U_029",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 29",
+        "en": "Tactical Unit 29"
+      },
+      "description": {
+        "th": "ยูนิตสาย warrior ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A warrior unit for tempo and board control."
+      },
+      "faction": "DEMON",
+      "race": "DRAGONKIN",
+      "classTags": [
+        "WARRIOR"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 93,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 2,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "BUFF_HP",
+          "target": {
+            "owner": "ALLY",
+            "zone": "BOARD_FRONT",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "demon"
+      ]
+    },
+    {
+      "id": "D2_U_032",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 32",
+        "en": "Tactical Unit 32"
+      },
+      "description": {
+        "th": "ยูนิตสาย priest ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A priest unit for tempo and board control."
+      },
+      "faction": "DEMON",
+      "race": "UNDEAD",
+      "classTags": [
+        "PRIEST"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 96,
+      "cost": {
+        "mana": 4,
+        "sideStacks": 0
+      },
+      "attack": 5,
+      "hp": 4,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "TAUNT",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "demon"
+      ]
+    }
+  ]
+}

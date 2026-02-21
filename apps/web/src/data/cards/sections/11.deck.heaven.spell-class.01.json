@@ -1,0 +1,168 @@
+{
+  "sectionId": "DECK_HEAVEN_SPELL_CLASS_01",
+  "title": "Deck / HEAVEN / SPELL_CLASS (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "HEAVEN",
+  "cardType": "SPELL_CLASS",
+  "cards": [
+    {
+      "id": "D2_SC_001",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_CLASS",
+      "name": {
+        "th": "บทบัญชานักรบ",
+        "en": "Warrior Doctrine"
+      },
+      "description": {
+        "th": "ต้องมี WARRIOR ในสนามเพื่อใช้งาน",
+        "en": "Requires WARRIOR on board."
+      },
+      "faction": "HEAVEN",
+      "race": "NONE",
+      "classTags": [
+        "WARRIOR"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 109,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresClassOnBoard": [
+          "WARRIOR"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "BUFF_ATK",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 2,
+          "duration": "END_OF_TURN"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "class",
+        "expanded"
+      ]
+    },
+    {
+      "id": "D2_SC_002",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_CLASS",
+      "name": {
+        "th": "ยิงสกัดแม่นยำ",
+        "en": "Precision Intercept"
+      },
+      "description": {
+        "th": "ต้องมี ARCHER ในสนามเพื่อใช้งาน",
+        "en": "Requires ARCHER on board."
+      },
+      "faction": "HEAVEN",
+      "race": "NONE",
+      "classTags": [
+        "ARCHER"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 110,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresClassOnBoard": [
+          "ARCHER"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 3,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "class",
+        "expanded"
+      ]
+    },
+    {
+      "id": "D2_SC_004",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_CLASS",
+      "name": {
+        "th": "แสงปลอบประโลม",
+        "en": "Soothing Light"
+      },
+      "description": {
+        "th": "ต้องมี PRIEST ในสนามเพื่อใช้งาน",
+        "en": "Requires PRIEST on board."
+      },
+      "faction": "HEAVEN",
+      "race": "NONE",
+      "classTags": [
+        "PRIEST"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 112,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresClassOnBoard": [
+          "PRIEST"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "class",
+        "expanded"
+      ]
+    }
+  ]
+}

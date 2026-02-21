@@ -1,0 +1,135 @@
+{
+  "sectionId": "DECK_NEUTRAL_SKILL_RACE_01",
+  "title": "Deck / NEUTRAL / SKILL_RACE (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "NEUTRAL",
+  "cardType": "SKILL_RACE",
+  "cards": [
+    {
+      "id": "D_SR_MACHINE_OVERCLOCK",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_RACE",
+      "name": {
+        "th": "โอเวอร์คล็อกจักรกล",
+        "en": "Machine Overclock"
+      },
+      "description": {
+        "th": "ต้องมี Machine ในสนาม ฟื้นมานา 1 และบัฟโจมตีเป้าหมาย 2",
+        "en": "Requires Machine. Restore 1 mana and buff a chosen ally by 2 attack."
+      },
+      "faction": "NEUTRAL",
+      "race": "MACHINE",
+      "classTags": [],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 57,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresRaceOnBoard": [
+          "MACHINE"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "RESTORE_MANA",
+          "target": {
+            "owner": "SELF",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "BUFF_ATK",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 2,
+          "duration": "END_OF_TURN"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "race",
+        "machine"
+      ]
+    },
+    {
+      "id": "D2_SR_002",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_RACE",
+      "name": {
+        "th": "แกนจักรโอเวอร์โหลด",
+        "en": "Overclock Core"
+      },
+      "description": {
+        "th": "ต้องมีเผ่า MACHINE บนกระดาน",
+        "en": "Requires MACHINE on board."
+      },
+      "faction": "NEUTRAL",
+      "race": "MACHINE",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 116,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresRaceOnBoard": [
+          "MACHINE"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "RESTORE_MANA",
+          "target": {
+            "owner": "SELF",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "BUFF_ATK",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 2,
+          "duration": "END_OF_TURN"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "race",
+        "expanded"
+      ]
+    }
+  ]
+}

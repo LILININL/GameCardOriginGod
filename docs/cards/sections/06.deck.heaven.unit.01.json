@@ -1,0 +1,327 @@
+{
+  "sectionId": "DECK_HEAVEN_UNIT_01",
+  "title": "Deck / HEAVEN / UNIT (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "HEAVEN",
+  "cardType": "UNIT",
+  "cards": [
+    {
+      "id": "D_U_SHIELD_RECRUIT",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "ทหารโล่ฝึกหัด",
+        "en": "Shield Recruit"
+      },
+      "description": {
+        "th": "แนวหน้าราคาถูกสำหรับยื้อเทิร์นต้นเกม",
+        "en": "Low-cost frontline unit for early board hold."
+      },
+      "faction": "HEAVEN",
+      "race": "HUMAN",
+      "classTags": [
+        "WARRIOR",
+        "TANK"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 8,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 0
+      },
+      "attack": 1,
+      "hp": 2,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "TAUNT",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "starter"
+      ]
+    },
+    {
+      "id": "D_U_SUN_ARCHER",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "พลธนูตะวัน",
+        "en": "Sun Archer"
+      },
+      "description": {
+        "th": "หากแถวหน้าศัตรูโล่ง จะยิงเข้าเลือดราชาได้เมื่อถูกลงสนาม",
+        "en": "Deals chip damage to enemy king if enemy front row is empty."
+      },
+      "faction": "HEAVEN",
+      "race": "ANGEL",
+      "classTags": [
+        "ARCHER"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 9,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 2,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "condition": {
+            "type": "ENEMY_FRONT_EMPTY"
+          },
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "ranged"
+      ]
+    },
+    {
+      "id": "D_U_TEMPLE_MAGE",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "จอมเวทวิหาร",
+        "en": "Temple Mage"
+      },
+      "description": {
+        "th": "ลงพร้อมนักบวชฝั่งเราแล้วจั่วเพิ่ม 1 ใบ",
+        "en": "Draws 1 card on play if you control a Priest."
+      },
+      "faction": "HEAVEN",
+      "race": "HUMAN",
+      "classTags": [
+        "MAGE"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 10,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 3,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 1,
+          "condition": {
+            "type": "ALLY_CLASS_COUNT_AT_LEAST",
+            "classTag": "PRIEST",
+            "value": 1
+          },
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "draw"
+      ]
+    },
+    {
+      "id": "D_U_AETHER_DRAGONET",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "ลูกมังกรอีเธอร์",
+        "en": "Aether Dragonet"
+      },
+      "description": {
+        "th": "มังกรสวรรค์ราคาประหยัด ลงแล้วฟื้นฟูราชา 1",
+        "en": "Low-cost heaven dragon that heals your king by 1 on play."
+      },
+      "faction": "HEAVEN",
+      "race": "DRAGONKIN",
+      "classTags": [
+        "MAGE"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 25,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 2,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "dragonkin",
+        "heaven"
+      ]
+    },
+    {
+      "id": "D_U_SKYFORGE_SENTINEL",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "เซนทิเนลโรงหลอมฟ้า",
+        "en": "Skyforge Sentinel"
+      },
+      "description": {
+        "th": "เครื่องจักรแนวหน้าที่ยั่วยุศัตรูทันทีเมื่อถูกลง",
+        "en": "Frontline machine that gains Taunt on summon."
+      },
+      "faction": "HEAVEN",
+      "race": "MACHINE",
+      "classTags": [
+        "TANK"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 26,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "attack": 1,
+      "hp": 4,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "TAUNT",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "machine",
+        "tank"
+      ]
+    },
+    {
+      "id": "D_U_DAWN_PEGASUS",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "เพกาซัสดอว์นวิง",
+        "en": "Dawn Pegasus"
+      },
+      "description": {
+        "th": "ธนูปีกขาวที่ได้ Sniper ตั้งแต่ลงสนาม",
+        "en": "A ranged beastkin unit that gains Sniper on summon."
+      },
+      "faction": "HEAVEN",
+      "race": "BEASTKIN",
+      "classTags": [
+        "ARCHER"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 27,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 3,
+      "hp": 2,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "SNIPER",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "beastkin",
+        "archer"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "sectionId": "DECK_DEMON_SKILL_RACE_01",
+  "title": "Deck / DEMON / SKILL_RACE (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "DEMON",
+  "cardType": "SKILL_RACE",
+  "cards": [
+    {
+      "id": "D_SR_UNDEAD_DIRGE",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_RACE",
+      "name": {
+        "th": "บทเพลงวิญญาณซากศพ",
+        "en": "Undead Dirge"
+      },
+      "description": {
+        "th": "ต้องมี Undead ในสนาม โจมตีหมู่ศัตรู 1 และเพิ่ม Side Stack 1",
+        "en": "Requires Undead. Deal 1 to all enemies and gain 1 side stack."
+      },
+      "faction": "DEMON",
+      "race": "UNDEAD",
+      "classTags": [],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 58,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresRaceOnBoard": [
+          "UNDEAD"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "GAIN_SIDE_STACK",
+          "target": {
+            "owner": "SELF",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "race",
+        "undead"
+      ]
+    },
+    {
+      "id": "D_SR_ABYSSAL_ECHO",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_RACE",
+      "name": {
+        "th": "เสียงสะท้อนจากเหว",
+        "en": "Abyssal Echo"
+      },
+      "description": {
+        "th": "ต้องมี Abyssal ในสนาม ยิงราชาศัตรู 2 และจั่ว 1",
+        "en": "Requires Abyssal. Deal 2 to enemy king and draw 1."
+      },
+      "faction": "DEMON",
+      "race": "ABYSSAL",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 60,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresRaceOnBoard": [
+          "ABYSSAL"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "race",
+        "abyssal"
+      ]
+    },
+    {
+      "id": "D2_SR_003",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_RACE",
+      "name": {
+        "th": "หมอกวิญญาณเน่า",
+        "en": "Rotting Spirit Mist"
+      },
+      "description": {
+        "th": "ต้องมีเผ่า UNDEAD บนกระดาน",
+        "en": "Requires UNDEAD on board."
+      },
+      "faction": "DEMON",
+      "race": "UNDEAD",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 117,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresRaceOnBoard": [
+          "UNDEAD"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "race",
+        "expanded"
+      ]
+    },
+    {
+      "id": "D2_SR_005",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_RACE",
+      "name": {
+        "th": "เสียงเรียกก้นเหว",
+        "en": "Abyss Call"
+      },
+      "description": {
+        "th": "ต้องมีเผ่า ABYSSAL บนกระดาน",
+        "en": "Requires ABYSSAL on board."
+      },
+      "faction": "DEMON",
+      "race": "ABYSSAL",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 119,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresRaceOnBoard": [
+          "ABYSSAL"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "race",
+        "expanded"
+      ]
+    }
+  ]
+}

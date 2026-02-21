@@ -1,0 +1,323 @@
+{
+  "sectionId": "DECK_DEMON_UNIT_02",
+  "title": "Deck / DEMON / UNIT (Part 2)",
+  "kind": "DECK_CARD",
+  "faction": "DEMON",
+  "cardType": "UNIT",
+  "cards": [
+    {
+      "id": "D_U_ABYSS_REAVER",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "รีฟเวอร์เหวลึก",
+        "en": "Abyss Reaver"
+      },
+      "description": {
+        "th": "มือสังหาร Abyssal ระยะไกลที่ได้ Sniper",
+        "en": "Ranged abyssal assassin that gains Sniper on summon."
+      },
+      "faction": "DEMON",
+      "race": "ABYSSAL",
+      "classTags": [
+        "ASSASSIN"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 35,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "attack": 3,
+      "hp": 2,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "SNIPER",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "abyssal",
+        "sniper"
+      ]
+    },
+    {
+      "id": "D_U_CINDER_BRUTE",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "บรูทซินเดอร์",
+        "en": "Cinder Brute"
+      },
+      "description": {
+        "th": "ตัวชนหลักฝั่งปีศาจ พร้อม Taunt เลือดหนา",
+        "en": "Primary demon frontline bruiser with Taunt."
+      },
+      "faction": "DEMON",
+      "race": "DEMON",
+      "classTags": [
+        "TANK"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 36,
+      "cost": {
+        "mana": 4,
+        "sideStacks": 0
+      },
+      "attack": 4,
+      "hp": 5,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "TAUNT",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "demon",
+        "tank"
+      ]
+    },
+    {
+      "id": "D_U_PLAGUE_SHAPER",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "ผู้ปั้นโรคา",
+        "en": "Plague Shaper"
+      },
+      "description": {
+        "th": "ลงแล้วปล่อยพิษใส่ยูนิตศัตรูทั้งหมด 1",
+        "en": "On play, deals 1 damage to all enemy units."
+      },
+      "faction": "DEMON",
+      "race": "UNDEAD",
+      "classTags": [
+        "PRIEST",
+        "SUPPORT"
+      ],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 37,
+      "cost": {
+        "mana": 4,
+        "sideStacks": 0
+      },
+      "attack": 2,
+      "hp": 4,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "undead",
+        "aoe"
+      ]
+    },
+    {
+      "id": "D_U_RIFT_DRAGONKIN",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "มังกรรอยแยก",
+        "en": "Rift Dragonkin"
+      },
+      "description": {
+        "th": "มังกรปีศาจยิงไกล ลงแล้วยิงเป้าเดี่ยว 2",
+        "en": "Demon dragon that deals 2 to a chosen enemy unit on play."
+      },
+      "faction": "DEMON",
+      "race": "DRAGONKIN",
+      "classTags": [
+        "MAGE"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 38,
+      "cost": {
+        "mana": 4,
+        "sideStacks": 0
+      },
+      "attack": 3,
+      "hp": 3,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "dragonkin",
+        "removal"
+      ]
+    },
+    {
+      "id": "D_U_TOMB_WARDEN",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "ผู้คุมสุสาน",
+        "en": "Tomb Warden"
+      },
+      "description": {
+        "th": "ยูนิตราคาถูกแต่ทนมาก ใช้ยื้อเวลาให้เด็คปีศาจ",
+        "en": "Low-cost high-HP undead tank for stalling."
+      },
+      "faction": "DEMON",
+      "race": "UNDEAD",
+      "classTags": [
+        "TANK"
+      ],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 39,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "attack": 1,
+      "hp": 5,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "TAUNT",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "undead",
+        "tank"
+      ]
+    },
+    {
+      "id": "D_U_DRAGONKIN_RAIDER",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "จู่โจมมังกรคลั่ง",
+        "en": "Dragonkin Raider"
+      },
+      "description": {
+        "th": "ตัวปิดเกมสายเร็วของปีศาจ ลงแล้ว Rush ทันที",
+        "en": "Fast demon finisher with immediate Rush."
+      },
+      "faction": "DEMON",
+      "race": "DRAGONKIN",
+      "classTags": [
+        "WARRIOR",
+        "ASSASSIN"
+      ],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 40,
+      "cost": {
+        "mana": 5,
+        "sideStacks": 0
+      },
+      "attack": 5,
+      "hp": 3,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "RUSH",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "dragonkin",
+        "finisher"
+      ]
+    }
+  ]
+}

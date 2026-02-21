@@ -1,0 +1,204 @@
+{
+  "sectionId": "DECK_NEUTRAL_UNIT_03",
+  "title": "Deck / NEUTRAL / UNIT (Part 3)",
+  "kind": "DECK_CARD",
+  "faction": "NEUTRAL",
+  "cardType": "UNIT",
+  "cards": [
+    {
+      "id": "D2_U_024",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 24",
+        "en": "Tactical Unit 24"
+      },
+      "description": {
+        "th": "ยูนิตสาย mage ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A mage unit for tempo and board control."
+      },
+      "faction": "NEUTRAL",
+      "race": "DRAGONKIN",
+      "classTags": [
+        "MAGE"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 88,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 0
+      },
+      "attack": 1,
+      "hp": 1,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "LOWEST_HP"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "neutral"
+      ]
+    },
+    {
+      "id": "D2_U_027",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 27",
+        "en": "Tactical Unit 27"
+      },
+      "description": {
+        "th": "ยูนิตสาย tank ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A tank unit for tempo and board control."
+      },
+      "faction": "NEUTRAL",
+      "race": "BEASTKIN",
+      "classTags": [
+        "TANK"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 91,
+      "cost": {
+        "mana": 4,
+        "sideStacks": 0
+      },
+      "attack": 3,
+      "hp": 5,
+      "rangeType": "MELEE",
+      "deployment": "FRONT_ONLY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_PLAY",
+          "op": "GAIN_SIDE_STACK",
+          "target": {
+            "owner": "SELF",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "neutral"
+      ]
+    },
+    {
+      "id": "D2_U_030",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 30",
+        "en": "Tactical Unit 30"
+      },
+      "description": {
+        "th": "ยูนิตสาย archer ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A archer unit for tempo and board control."
+      },
+      "faction": "NEUTRAL",
+      "race": "MACHINE",
+      "classTags": [
+        "ARCHER"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 94,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "attack": 1,
+      "hp": 2,
+      "rangeType": "RANGED",
+      "deployment": "BACK_ONLY",
+      "abilities": [],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "neutral"
+      ]
+    },
+    {
+      "id": "D2_U_033",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "UNIT",
+      "name": {
+        "th": "หน่วยยุทธการ 33",
+        "en": "Tactical Unit 33"
+      },
+      "description": {
+        "th": "ยูนิตสาย assassin ใช้เติมแผนบุกและคุมกระดาน",
+        "en": "A assassin unit for tempo and board control."
+      },
+      "faction": "NEUTRAL",
+      "race": "HUMAN",
+      "classTags": [
+        "ASSASSIN"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 97,
+      "cost": {
+        "mana": 5,
+        "sideStacks": 0
+      },
+      "attack": 4,
+      "hp": 6,
+      "rangeType": "MELEE",
+      "deployment": "ANY",
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_SUMMON",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "SELF",
+            "zone": "UNIT_ANY",
+            "selector": "THIS"
+          },
+          "keyword": "SNIPER",
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "unit",
+        "expanded",
+        "neutral"
+      ]
+    }
+  ]
+}

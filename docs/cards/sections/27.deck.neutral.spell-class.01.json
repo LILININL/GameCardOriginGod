@@ -1,0 +1,301 @@
+{
+  "sectionId": "DECK_NEUTRAL_SPELL_CLASS_01",
+  "title": "Deck / NEUTRAL / SPELL_CLASS (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "NEUTRAL",
+  "cardType": "SPELL_CLASS",
+  "cards": [
+    {
+      "id": "D_SC_ARCANE_OVERLOAD",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_CLASS",
+      "name": {
+        "th": "โอเวอร์โหลดอาร์เคน",
+        "en": "Arcane Overload"
+      },
+      "description": {
+        "th": "ต้องมีจอมเวทในสนาม ทำดาเมจ 3 และจั่วเมื่อคอมโบถึง 2",
+        "en": "Requires a Mage in play. Deals 3 and may draw at Combo 2+."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [
+        "MAGE"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 18,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresClassOnBoard": [
+          "MAGE"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 3,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 1,
+          "condition": {
+            "type": "COMBO_AT_LEAST",
+            "value": 2
+          },
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "class"
+      ]
+    },
+    {
+      "id": "D_SC_VOLLEY_COMMAND",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_CLASS",
+      "name": {
+        "th": "คำสั่งระดมยิง",
+        "en": "Volley Command"
+      },
+      "description": {
+        "th": "ต้องมี Archer ในสนาม สร้างดาเมจ 2 และจั่ว 1",
+        "en": "Requires an Archer. Deal 2 damage and draw 1 card."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [
+        "ARCHER"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 51,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresClassOnBoard": [
+          "ARCHER"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "class",
+        "archer"
+      ]
+    },
+    {
+      "id": "D_SC_BATTLE_PRAYER",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_CLASS",
+      "name": {
+        "th": "คำภาวนาสนามรบ",
+        "en": "Battle Prayer"
+      },
+      "description": {
+        "th": "ต้องมี Priest ในสนาม ฟื้นฟูยูนิตฝั่งเราทั้งหมด 2",
+        "en": "Requires a Priest. Heal all allied units by 2."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [
+        "PRIEST"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 52,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresClassOnBoard": [
+          "PRIEST"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "class",
+        "priest"
+      ]
+    },
+    {
+      "id": "D_SC_FATAL_STEP",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_CLASS",
+      "name": {
+        "th": "ก้าวมรณะ",
+        "en": "Fatal Step"
+      },
+      "description": {
+        "th": "ต้องมี Assassin ในสนาม สร้างดาเมจ 3 ให้เป้าหมาย",
+        "en": "Requires an Assassin. Deal 3 damage to a chosen unit."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [
+        "ASSASSIN"
+      ],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 53,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresClassOnBoard": [
+          "ASSASSIN"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 3,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "class",
+        "assassin"
+      ]
+    },
+    {
+      "id": "D_SC_FORTRESS_STANCE",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_CLASS",
+      "name": {
+        "th": "ท่าป้อมปราการ",
+        "en": "Fortress Stance"
+      },
+      "description": {
+        "th": "ต้องมี Tank ในสนาม เพิ่มพลังชีวิตแนวหน้า +2",
+        "en": "Requires a Tank. Give allied frontline units +2 HP."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [
+        "TANK"
+      ],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 54,
+      "cost": {
+        "mana": 3,
+        "sideStacks": 0
+      },
+      "requirements": {
+        "requiresClassOnBoard": [
+          "TANK"
+        ]
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "BUFF_HP",
+          "target": {
+            "owner": "ALLY",
+            "zone": "BOARD_FRONT",
+            "selector": "ALL"
+          },
+          "amount": 2,
+          "duration": "PERMANENT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "class",
+        "tank"
+      ]
+    }
+  ]
+}

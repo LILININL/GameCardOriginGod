@@ -1,0 +1,121 @@
+{
+  "sectionId": "DECK_NEUTRAL_SKILL_SIDE_01",
+  "title": "Deck / NEUTRAL / SKILL_SIDE (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "NEUTRAL",
+  "cardType": "SKILL_SIDE",
+  "cards": [
+    {
+      "id": "D_SS_NEUTRAL_WAR_CHEST",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_SIDE",
+      "name": {
+        "th": "คลังเสบียงสงคราม",
+        "en": "War Chest"
+      },
+      "description": {
+        "th": "ใช้ Side Stack 2 เพื่อจั่ว 2 และฟื้นมานา 1",
+        "en": "Spend 2 side stacks to draw 2 cards and restore 1 mana."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "RARE",
+      "collectible": true,
+      "releaseOrder": 62,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 2
+      },
+      "requirements": {
+        "requiresFaction": "NEUTRAL",
+        "minSideStacks": 2
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 2,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "RESTORE_MANA",
+          "target": {
+            "owner": "SELF",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "side",
+        "neutral"
+      ]
+    },
+    {
+      "id": "D2_SS_003",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_SIDE",
+      "name": {
+        "th": "คลังยุทธปัจจัย",
+        "en": "War Supply Cache"
+      },
+      "description": {
+        "th": "ต้องใช้แต้มฝั่งอย่างน้อย 2",
+        "en": "Requires at least 2 side stacks."
+      },
+      "faction": "NEUTRAL",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 122,
+      "cost": {
+        "mana": 1,
+        "sideStacks": 2
+      },
+      "requirements": {
+        "requiresFaction": "NEUTRAL",
+        "minSideStacks": 2
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DRAW_CARD",
+          "target": {
+            "owner": "SELF",
+            "zone": "DECK",
+            "selector": "NONE"
+          },
+          "drawCount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "side",
+        "expanded"
+      ]
+    }
+  ]
+}

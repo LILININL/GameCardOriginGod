@@ -1,0 +1,195 @@
+{
+  "sectionId": "DECK_HEAVEN_SKILL_SIDE_01",
+  "title": "Deck / HEAVEN / SKILL_SIDE (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "HEAVEN",
+  "cardType": "SKILL_SIDE",
+  "cards": [
+    {
+      "id": "D_SS_HEAVEN_TRIBUNAL",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_SIDE",
+      "name": {
+        "th": "สภาตัดสินสวรรค์",
+        "en": "Heaven Tribunal"
+      },
+      "description": {
+        "th": "ใช้ Side Stack 2 สร้างดาเมจ 2 และฮีลราชาเรา 2",
+        "en": "Spend 2 side stacks to deal 2 and heal your king by 2."
+      },
+      "faction": "HEAVEN",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 61,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 2
+      },
+      "requirements": {
+        "requiresFaction": "HEAVEN",
+        "minSideStacks": 2
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "side",
+        "heaven"
+      ]
+    },
+    {
+      "id": "D2_SS_001",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_SIDE",
+      "name": {
+        "th": "คำประกาศเทวบัญชา",
+        "en": "Heaven Mandate"
+      },
+      "description": {
+        "th": "ต้องใช้แต้มฝั่งอย่างน้อย 2",
+        "en": "Requires at least 2 side stacks."
+      },
+      "faction": "HEAVEN",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 120,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 2
+      },
+      "requirements": {
+        "requiresFaction": "HEAVEN",
+        "minSideStacks": 2
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "BUFF_ATK",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 2,
+          "duration": "END_OF_TURN"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "side",
+        "expanded"
+      ]
+    },
+    {
+      "id": "D2_SS_005",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SKILL_SIDE",
+      "name": {
+        "th": "ชุมนุมผู้พิทักษ์",
+        "en": "Guardian Assembly"
+      },
+      "description": {
+        "th": "ต้องใช้แต้มฝั่งอย่างน้อย 3",
+        "en": "Requires at least 3 side stacks."
+      },
+      "faction": "HEAVEN",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 124,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 3
+      },
+      "requirements": {
+        "requiresFaction": "HEAVEN",
+        "minSideStacks": 3
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "BUFF_HP",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "PERMANENT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "keyword": "WARD",
+          "duration": "END_OF_TURN"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "skill",
+        "side",
+        "expanded"
+      ]
+    }
+  ]
+}

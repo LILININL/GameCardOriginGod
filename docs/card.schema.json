@@ -1,0 +1,760 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alumilive.dev/schemas/card.schema.json",
+  "title": "Alumilive Alpha Card Schema",
+  "type": "object",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/kingCard"
+    },
+    {
+      "$ref": "#/$defs/commanderCard"
+    },
+    {
+      "$ref": "#/$defs/deckCard"
+    }
+  ],
+  "unevaluatedProperties": false,
+  "$defs": {
+    "faction": {
+      "type": "string",
+      "enum": [
+        "HEAVEN",
+        "DEMON",
+        "NEUTRAL"
+      ]
+    },
+    "race": {
+      "type": "string",
+      "enum": [
+        "HUMAN",
+        "ANGEL",
+        "BEASTKIN",
+        "MACHINE",
+        "DRAGONKIN",
+        "DEMON",
+        "UNDEAD",
+        "ABYSSAL",
+        "NONE"
+      ]
+    },
+    "classTag": {
+      "type": "string",
+      "enum": [
+        "WARRIOR",
+        "ARCHER",
+        "MAGE",
+        "PRIEST",
+        "ASSASSIN",
+        "TANK",
+        "SUPPORT"
+      ]
+    },
+    "rarity": {
+      "type": "string",
+      "enum": [
+        "COMMON",
+        "RARE",
+        "EPIC",
+        "LEGENDARY"
+      ]
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "KING",
+        "COMMANDER",
+        "DECK_CARD"
+      ]
+    },
+    "deckCardType": {
+      "type": "string",
+      "enum": [
+        "UNIT",
+        "SPELL_GENERIC",
+        "SPELL_CLASS",
+        "SKILL_RACE",
+        "SKILL_SIDE"
+      ]
+    },
+    "rangeType": {
+      "type": "string",
+      "enum": [
+        "MELEE",
+        "RANGED"
+      ]
+    },
+    "deployment": {
+      "type": "string",
+      "enum": [
+        "FRONT_ONLY",
+        "BACK_ONLY",
+        "ANY"
+      ]
+    },
+    "keyword": {
+      "type": "string",
+      "enum": [
+        "TAUNT",
+        "RUSH",
+        "LIFESTEAL",
+        "WARD",
+        "SNIPER",
+        "SILENCED",
+        "SHIELD"
+      ]
+    },
+    "localizedText": {
+      "type": "object",
+      "required": [
+        "th",
+        "en"
+      ],
+      "properties": {
+        "th": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 140
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 140
+        }
+      },
+      "additionalProperties": false
+    },
+    "cost": {
+      "type": "object",
+      "required": [
+        "mana",
+        "sideStacks"
+      ],
+      "properties": {
+        "mana": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "sideStacks": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        }
+      },
+      "additionalProperties": false
+    },
+    "requirements": {
+      "type": "object",
+      "properties": {
+        "requiresClassOnBoard": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/classTag"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "requiresRaceOnBoard": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/race"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "requiresFaction": {
+          "$ref": "#/$defs/faction"
+        },
+        "requiresKingRace": {
+          "$ref": "#/$defs/race"
+        },
+        "minCombo": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "minSideStacks": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        }
+      },
+      "additionalProperties": false
+    },
+    "condition": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "ALLY_CLASS_COUNT_AT_LEAST",
+            "ALLY_RACE_COUNT_AT_LEAST",
+            "COMBO_AT_LEAST",
+            "ENEMY_FRONT_EMPTY",
+            "TARGET_IS_DAMAGED",
+            "SIDE_STACK_AT_LEAST",
+            "KILL_COUNT_THIS_TURN_AT_LEAST",
+            "KING_RACE_IS"
+          ]
+        },
+        "value": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "classTag": {
+          "$ref": "#/$defs/classTag"
+        },
+        "race": {
+          "$ref": "#/$defs/race"
+        }
+      },
+      "additionalProperties": false
+    },
+    "target": {
+      "type": "object",
+      "required": [
+        "owner",
+        "zone",
+        "selector"
+      ],
+      "properties": {
+        "owner": {
+          "type": "string",
+          "enum": [
+            "SELF",
+            "ALLY",
+            "ENEMY",
+            "BOTH",
+            "NONE"
+          ]
+        },
+        "zone": {
+          "type": "string",
+          "enum": [
+            "NONE",
+            "KING",
+            "COMMANDER",
+            "BOARD_FRONT",
+            "BOARD_BACK",
+            "BOARD_ANY",
+            "UNIT_ANY",
+            "HAND",
+            "DECK",
+            "DISCARD"
+          ]
+        },
+        "selector": {
+          "type": "string",
+          "enum": [
+            "NONE",
+            "CHOSEN",
+            "RANDOM",
+            "ALL",
+            "LOWEST_HP",
+            "HIGHEST_ATK",
+            "SAME_COLUMN",
+            "LEFTMOST",
+            "RIGHTMOST",
+            "THIS"
+          ]
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6
+        },
+        "allowKing": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ability": {
+      "type": "object",
+      "required": [
+        "id",
+        "trigger",
+        "op",
+        "target"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^A[0-9]{2}$"
+        },
+        "trigger": {
+          "type": "string",
+          "enum": [
+            "ON_PLAY",
+            "ON_CAST",
+            "ON_SUMMON",
+            "ON_ATTACK",
+            "ON_HIT",
+            "ON_KILL",
+            "ON_DEATH",
+            "TURN_START",
+            "TURN_END",
+            "STATIC",
+            "ON_ULTIMATE",
+            "ON_ACTIVATE_AURA"
+          ]
+        },
+        "op": {
+          "type": "string",
+          "enum": [
+            "DEAL_DAMAGE",
+            "HEAL",
+            "BUFF_ATK",
+            "BUFF_HP",
+            "DRAW_CARD",
+            "SUMMON_TOKEN",
+            "GRANT_KEYWORD",
+            "REMOVE_KEYWORD",
+            "GAIN_SIDE_STACK",
+            "GAIN_COMBO",
+            "REDUCE_NEXT_TYPE_COST",
+            "SILENCE",
+            "DESTROY",
+            "RESTORE_MANA"
+          ]
+        },
+        "target": {
+          "$ref": "#/$defs/target"
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": -20,
+          "maximum": 20
+        },
+        "drawCount": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "keyword": {
+          "$ref": "#/$defs/keyword"
+        },
+        "duration": {
+          "type": "string",
+          "enum": [
+            "INSTANT",
+            "END_OF_TURN",
+            "PERMANENT",
+            "N_TURNS"
+          ]
+        },
+        "turns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "condition": {
+          "$ref": "#/$defs/condition"
+        },
+        "cardRef": {
+          "type": "string",
+          "pattern": "^[A-Z0-9_]{4,64}$"
+        },
+        "appliesToCardTypes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/deckCardType"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 256
+        }
+      },
+      "additionalProperties": false
+    },
+    "ultimate": {
+      "type": "object",
+      "required": [
+        "name",
+        "usesPerGame",
+        "unlockTurnMin",
+        "effects"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "usesPerGame": {
+          "type": "integer",
+          "const": 1
+        },
+        "unlockTurnMin": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "effects": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ability"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "aura": {
+      "type": "object",
+      "required": [
+        "burst",
+        "pulse",
+        "pulseCooldownTurns"
+      ],
+      "properties": {
+        "burst": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ability"
+          }
+        },
+        "pulse": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ability"
+          }
+        },
+        "pulseCooldownTurns": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        }
+      },
+      "additionalProperties": false
+    },
+    "commonCard": {
+      "type": "object",
+      "required": [
+        "id",
+        "set",
+        "version",
+        "kind",
+        "name",
+        "description",
+        "faction",
+        "race",
+        "rarity",
+        "tags"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9_]{4,64}$"
+        },
+        "set": {
+          "type": "string",
+          "pattern": "^[A-Z0-9_]{3,32}$"
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "kind": {
+          "$ref": "#/$defs/kind"
+        },
+        "name": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "description": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "faction": {
+          "$ref": "#/$defs/faction"
+        },
+        "race": {
+          "$ref": "#/$defs/race"
+        },
+        "classTags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/classTag"
+          },
+          "uniqueItems": true
+        },
+        "rarity": {
+          "$ref": "#/$defs/rarity"
+        },
+        "collectible": {
+          "type": "boolean",
+          "default": true
+        },
+        "token": {
+          "type": "boolean",
+          "default": false
+        },
+        "releaseOrder": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "artKey": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "kingCard": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonCard"
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "hp",
+            "ultimate",
+            "allowedFactionsInDeck"
+          ],
+          "properties": {
+            "kind": {
+              "const": "KING"
+            },
+            "hp": {
+              "type": "integer",
+              "minimum": 18,
+              "maximum": 30
+            },
+            "ultimate": {
+              "$ref": "#/$defs/ultimate"
+            },
+            "allowedFactionsInDeck": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/faction"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "forbiddenCardTypes": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/deckCardType"
+              },
+              "uniqueItems": true
+            }
+          }
+        }
+      ]
+    },
+    "commanderCard": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonCard"
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "cost",
+            "attack",
+            "hp",
+            "rangeType",
+            "deployment",
+            "aura"
+          ],
+          "properties": {
+            "kind": {
+              "const": "COMMANDER"
+            },
+            "cost": {
+              "$ref": "#/$defs/cost"
+            },
+            "attack": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "hp": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20
+            },
+            "rangeType": {
+              "$ref": "#/$defs/rangeType"
+            },
+            "deployment": {
+              "$ref": "#/$defs/deployment"
+            },
+            "aura": {
+              "$ref": "#/$defs/aura"
+            }
+          }
+        }
+      ]
+    },
+    "deckCard": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/commonCard"
+        },
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "cardType",
+            "cost",
+            "maxCopies"
+          ],
+          "properties": {
+            "kind": {
+              "const": "DECK_CARD"
+            },
+            "cardType": {
+              "$ref": "#/$defs/deckCardType"
+            },
+            "cost": {
+              "$ref": "#/$defs/cost"
+            },
+            "requirements": {
+              "$ref": "#/$defs/requirements"
+            },
+            "attack": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "hp": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20
+            },
+            "rangeType": {
+              "$ref": "#/$defs/rangeType"
+            },
+            "deployment": {
+              "$ref": "#/$defs/deployment"
+            },
+            "abilities": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/ability"
+              }
+            },
+            "maxCopies": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 2
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "cardType": {
+                    "const": "UNIT"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "attack",
+                  "hp",
+                  "rangeType",
+                  "deployment"
+                ]
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "cardType": {
+                    "const": "SPELL_CLASS"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "requirements"
+                ],
+                "properties": {
+                  "requirements": {
+                    "required": [
+                      "requiresClassOnBoard"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "cardType": {
+                    "const": "SKILL_RACE"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "requirements"
+                ],
+                "properties": {
+                  "requirements": {
+                    "required": [
+                      "requiresRaceOnBoard"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "cardType": {
+                    "const": "SKILL_SIDE"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "requirements"
+                ],
+                "properties": {
+                  "cost": {
+                    "required": [
+                      "sideStacks"
+                    ],
+                    "properties": {
+                      "sideStacks": {
+                        "minimum": 1
+                      }
+                    }
+                  },
+                  "requirements": {
+                    "required": [
+                      "requiresFaction",
+                      "minSideStacks"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

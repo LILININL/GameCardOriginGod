@@ -1,0 +1,214 @@
+{
+  "sectionId": "DECK_HEAVEN_SPELL_GENERIC_01",
+  "title": "Deck / HEAVEN / SPELL_GENERIC (Part 1)",
+  "kind": "DECK_CARD",
+  "faction": "HEAVEN",
+  "cardType": "SPELL_GENERIC",
+  "cards": [
+    {
+      "id": "D_S_BATTLE_MEDIC",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "แพทย์สนาม",
+        "en": "Battle Medic"
+      },
+      "description": {
+        "th": "ฮีลยูนิตเพื่อน 3 และฮีลราชาเพิ่ม 1",
+        "en": "Heals an allied unit by 3 and your king by 1."
+      },
+      "faction": "HEAVEN",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 17,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 3,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "KING",
+            "selector": "NONE"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "heal"
+      ]
+    },
+    {
+      "id": "D_S_HOLY_FLASH",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "แสงศักดิ์สิทธิ์ระเบิด",
+        "en": "Holy Flash"
+      },
+      "description": {
+        "th": "เวทสวรรค์ที่ตีหมู่ศัตรูและฮีลหมู่ฝั่งเรา",
+        "en": "Heaven spell that damages enemy board and heals allies."
+      },
+      "faction": "HEAVEN",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "EPIC",
+      "collectible": true,
+      "releaseOrder": 49,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "DEAL_DAMAGE",
+          "target": {
+            "owner": "ENEMY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        },
+        {
+          "id": "A02",
+          "trigger": "ON_CAST",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "amount": 1,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "heaven",
+        "aoe"
+      ]
+    },
+    {
+      "id": "D2_S_002",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "กำแพงเยียวยา",
+        "en": "Healing Wall"
+      },
+      "description": {
+        "th": "ฟื้นฟูยูนิตฝั่งเรา 2 ที่เลือก",
+        "en": "Heal a chosen allied unit by 2."
+      },
+      "faction": "HEAVEN",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 100,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "HEAL",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "CHOSEN"
+          },
+          "amount": 2,
+          "duration": "INSTANT"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "expanded"
+      ]
+    },
+    {
+      "id": "D2_S_009",
+      "set": "ALPHA_001",
+      "version": 1,
+      "kind": "DECK_CARD",
+      "cardType": "SPELL_GENERIC",
+      "name": {
+        "th": "ม่านพิทักษ์",
+        "en": "Safeguard Veil"
+      },
+      "description": {
+        "th": "มอบ Ward ให้ยูนิตฝั่งเราทั้งหมด",
+        "en": "Grant Ward to all allied units."
+      },
+      "faction": "HEAVEN",
+      "race": "NONE",
+      "classTags": [],
+      "rarity": "COMMON",
+      "collectible": true,
+      "releaseOrder": 107,
+      "cost": {
+        "mana": 2,
+        "sideStacks": 0
+      },
+      "abilities": [
+        {
+          "id": "A01",
+          "trigger": "ON_CAST",
+          "op": "GRANT_KEYWORD",
+          "target": {
+            "owner": "ALLY",
+            "zone": "UNIT_ANY",
+            "selector": "ALL"
+          },
+          "keyword": "WARD",
+          "duration": "END_OF_TURN"
+        }
+      ],
+      "maxCopies": 2,
+      "tags": [
+        "alpha",
+        "spell",
+        "expanded"
+      ]
+    }
+  ]
+}
