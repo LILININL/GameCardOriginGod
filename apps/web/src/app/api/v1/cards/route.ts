@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 
 import cards from "@/data/card-set";
 
+export const runtime = "edge";
+
 export function GET(request: NextRequest): NextResponse {
   const set = request.nextUrl.searchParams.get("set");
   if (set && set !== cards.set) {
