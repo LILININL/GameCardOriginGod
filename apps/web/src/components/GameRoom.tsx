@@ -54,6 +54,11 @@ interface TurnPassOverlayProps {
   onClose: () => void;
 }
 
+interface QuickRulesModalProps {
+  open: boolean;
+  onClose: () => void;
+}
+
 interface CardTargetCandidate {
   key: string;
   label: string;
@@ -291,6 +296,80 @@ function TurnPassOverlay({
   );
 }
 
+function QuickRulesModal({ open, onClose }: QuickRulesModalProps): React.JSX.Element | null {
+  if (!open) {
+    return null;
+  }
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/45 px-4"
+      role="dialog"
+      aria-modal="true"
+      aria-label="วิธีเล่นและกติกาแบบเร็ว"
+      onClick={(event) => {
+        if (event.target === event.currentTarget) {
+          onClose();
+        }
+      }}
+    >
+      <div className="max-h-[86vh] w-full max-w-3xl overflow-auto rounded-2xl border border-[var(--line)] bg-white shadow-xl">
+        <div className="sticky top-0 z-10 flex items-center justify-between border-b border-[var(--line)] bg-white px-4 py-3">
+          <div>
+            <p className="text-xs font-semibold text-[var(--muted)]">เริ่มเล่นให้ไว</p>
+            <h3 className="text-lg font-semibold">วิธีเล่นและกติกา (ฉบับอ่านเร็ว)</h3>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-lg border border-[var(--line)] bg-[var(--card)] px-3 py-1.5 text-xs font-semibold"
+          >
+            ปิด
+          </button>
+        </div>
+
+        <div className="space-y-3 p-4 text-sm">
+          <article className="rounded-xl border border-[#9dcfb2] bg-[#ecf8f0] p-3">
+            <p className="font-semibold text-[#184a31]">เล่นเร็ว 4 ขั้น</p>
+            <ol className="mt-1 space-y-1 text-xs text-[#245e3d]">
+              <li>1) เลือกการ์ดในมือ แล้วลงการ์ดในช่องไฮไลต์</li>
+              <li>2) เลือกยูนิตที่มีป้าย พร้อมโจมตี</li>
+              <li>3) เลือกเป้าหมายฝั่งตรงข้าม (ยูนิตหรือราชา)</li>
+              <li>4) ทำครบแล้วกด จบเทิร์น</li>
+            </ol>
+          </article>
+
+          <article className="rounded-xl border border-[var(--line)] bg-[var(--card)] p-3">
+            <p className="font-semibold">ลำดับเทิร์น</p>
+            <p className="mt-1 text-xs text-[var(--muted)]">
+              จั่ว 1 ใบ → มานา +1 (สูงสุด 10) → เล่นการ์ด/ใช้สกิล → โจมตี → จบเทิร์น
+            </p>
+          </article>
+
+          <article className="rounded-xl border border-[var(--line)] bg-[var(--card)] p-3">
+            <p className="font-semibold">กฎโจมตีตำแหน่ง (จำแค่นี้พอ)</p>
+            <ul className="mt-1 space-y-1 text-xs text-[var(--muted)]">
+              <li>- ยูนิตประชิด: โจมตีตัวตรงหน้าเท่านั้น</li>
+              <li>- ยูนิตระยะไกล: ต้องยิงแนวหน้าก่อน</li>
+              <li>- ถ้าแนวหน้าฝั่งตรงข้ามว่าง: โจมตีแนวหลังหรือราชาได้</li>
+            </ul>
+          </article>
+
+          <article className="rounded-xl border border-[var(--line)] bg-[var(--card)] p-3">
+            <p className="font-semibold">ปุ่มสำคัญที่เจอบ่อย</p>
+            <ul className="mt-1 space-y-1 text-xs text-[var(--muted)]">
+              <li>- ใช้อัลติเมต: กดได้ 1 ครั้ง/เกม</li>
+              <li>- ใช้ออร่าแม่ทัพ: ต้องลงแม่ทัพก่อน</li>
+              <li>- ลงแม่ทัพ: ใช้มานาตามที่ระบุ และต้องมีช่องว่าง</li>
+              <li>- เส้นไกด์โจมตี: เปิดไว้จะเห็นเป้าหมายที่โจมตีได้ทันที</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function modeHint(mode: UiMode, cardName: string | null): string {
   if (mode === "DEPLOY_COMMANDER") {
     return "โหมดลงแม่ทัพ: กดช่องสีน้ำเงินในกระดานฝั่งที่กำลังเล่น";
@@ -372,6 +451,7 @@ export function GameRoom(): React.JSX.Element {
   const [guideLines, setGuideLines] = useState<GuideLineSegment[]>([]);
   const [menuActiveKey, setMenuActiveKey] = useState<string | null>(null);
   const [menuFeedback, setMenuFeedback] = useState<string | null>(null);
+  const [quickRulesOpen, setQuickRulesOpen] = useState(false);
   const aiTurnKeyRef = useRef<string>("");
   const boardOverlayRef = useRef<HTMLDivElement | null>(null);
   const slotButtonRefs = useRef<Record<string, HTMLButtonElement | null>>({});
@@ -1147,6 +1227,21 @@ export function GameRoom(): React.JSX.Element {
     };
   }, []);
 
+  useEffect(() => {
+    if (!quickRulesOpen) {
+      return;
+    }
+    const onKeyDown = (event: KeyboardEvent): void => {
+      if (event.key === "Escape") {
+        setQuickRulesOpen(false);
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [quickRulesOpen]);
+
   const renderRow = (ownerId: PlayerId, slots: SlotId[], compact: boolean): React.JSX.Element => {
     const player = state.players[ownerId];
     return (
@@ -1352,6 +1447,11 @@ export function GameRoom(): React.JSX.Element {
         onClose={() => setTurnPassOpen(false)}
       />
 
+      <QuickRulesModal
+        open={quickRulesOpen}
+        onClose={() => setQuickRulesOpen(false)}
+      />
+
       <section className="space-y-5">
         <header className="rounded-2xl border border-[var(--line)] bg-[var(--panel)] p-5 shadow-sm">
           <div className="flex flex-wrap items-center justify-between gap-3">
@@ -1362,6 +1462,17 @@ export function GameRoom(): React.JSX.Element {
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => setQuickRulesOpen(true)}
+                className={`rounded-xl border px-3 py-2 text-sm transition hover:border-[var(--accent)] hover:bg-[#edf7f0] active:scale-[0.99] ${
+                  quickRulesOpen
+                    ? "border-[var(--accent)] bg-[#e0f2e7]"
+                    : "border-[var(--line)] bg-[var(--card)]"
+                }`}
+              >
+                วิธีเล่น/กติกา
+              </button>
               <button
                 type="button"
                 onClick={() =>
